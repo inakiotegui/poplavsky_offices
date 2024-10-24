@@ -12,8 +12,15 @@ export default function Portada() {
     <div className="Portada grid grid-nogutter nested-grid bg-bluegray-800 border-round gap-3 p-3 relative"
       style={{ height: 'calc(100vh - 8rem)' }}>
 
-      <div className='absolute w-13rem h-13rem bg-bluegray-100'
-        style={{ borderRadius: '100%', left: '49.5rem', top: '8rem' }}></div>
+      <div className='absolute w-12rem h-12rem bg-bluegray-100 flex justify-content-center align-items-center shadow-4'
+        style={{ borderRadius: '100%', left: '50rem', top: '6rem' }}>
+
+        <div className='border-3 border-yellow-500 w-6rem h-6rem flex justify-content-center align-items-center'
+          style={{ borderRadius: '100%', left: '49.5rem', top: '8rem' }}>
+          <i className='pi pi-arrow-up-right text-5xl text-yellow-500 font-light'></i>
+        </div>
+
+      </div>
 
 
       <section className='bg-bluegray-400 border-round col-6 grid grid-nogutter nested-grid justify-content-center align-content-center align-items-center'>
@@ -26,23 +33,23 @@ export default function Portada() {
 
           <div className='col-12 grid grid-nogutter nested-grid justify-content-center align-content-end gap-6 '>
             <div className='col-12' style={{ height: 'fit-content' }}>
-              <Button label="Ver Mas" size='small' outlined className='text-yellow-500 py-3 px-4 mr-3' />
-              <Button label="Buscar Servicios" size='small' className='bg-yellow-500 border-yellow-500 py-3 px-4' />
+              <Button label="Ver Mas" size='small' outlined className='shadow-2 text-yellow-500 py-3 px-4 mr-3' />
+              <Button label="Buscar Servicios" size='small' className='shadow-2 bg-yellow-500 border-yellow-500 py-3 px-4' />
             </div>
 
             <div className='col-12 grid grid-nogutter nested-grid gap-3 h-auto'>
-              <div className='col border-round bg-bluegray-300 border-white border-1 grid grid-nogutter nested-grid px-3 py-2 ' style={{ height: 'fit-content' }}>
+              <div className='col border-round bg-bluegray-300 border-white border-1 grid grid-nogutter nested-grid px-3 py-2 shadow-2 ' style={{ height: 'fit-content' }}>
                 <p className='m-0 col-12 font-semibold text-white text-5xl'>200+</p>
                 <span className='text-gray-500 text-xs font-light col-12'>Clientes Felices</span>
               </div>
 
 
-              <div className='col border-round bg-bluegray-300 border-white border-1 grid grid-nogutter nested-grid px-3 py-2 ' style={{ height: 'fit-content' }}>
+              <div className='col border-round bg-bluegray-300 border-white border-1 grid grid-nogutter nested-grid px-3 py-2 shadow-2 ' style={{ height: 'fit-content' }}>
                 <p className='m-0 col-12 font-semibold text-white text-5xl'>10k+</p>
                 <span className='text-gray-500 text-xs font-light col-12'>Servicios Aplicados</span>
               </div>
 
-              <div className='col border-round bg-bluegray-300 border-white border-1 grid grid-nogutter nested-grid px-3 py-2 ' style={{ height: 'fit-content' }}>
+              <div className='col border-round bg-bluegray-300 border-white border-1 grid grid-nogutter nested-grid px-3 py-2 shadow-2 ' style={{ height: 'fit-content' }}>
                 <p className='m-0 col-12 font-semibold text-white text-5xl'>16+</p>
                 <span className='text-gray-500 text-xs font-light col-12'>Años De Experiencia</span>
               </div>
