@@ -18,7 +18,7 @@ export default function NavBar() {
         <Button label="Services" size='small' outlined onClick={() => navigate('/services')} className='text-yellow-500 py-2 px-4' />
       </div>
       <div className='col-2 bg-bluegray-400 border-round flex justify-content-center align-items-center'>
-        <Button label="Contact" size='small' outlined onClick={() => navigate('/')} className='text-yellow-500 py-2 px-4' />
+        <Button label="Contact" size='small' onClick={() => navigate('/')} className='bg-yellow-500 border-yellow-500 py-2 px-4' />
       </div>
     </div>
   );
