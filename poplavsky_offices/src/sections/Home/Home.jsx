@@ -7,7 +7,7 @@ import Portada from '../../components/Home/Portada/Portada';
 export default function Home() {
   return (
     <div className="Home grid grid-nogutter nested-grid p-3 gap-1">
-      <nav className="col-12 bg-bluegray-800 h-4rem border-round">
+      <nav className="col-12 bg-bluegray-800 border-round">
         <NavBar />
       </nav>
       <section className='col-12'>

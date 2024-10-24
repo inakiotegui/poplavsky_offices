@@ -8,7 +8,7 @@ import { Button } from 'primereact/button';
 export default function Portada() {
   return (
     <div className="Portada grid grid-nogutter nested-grid bg-bluegray-800 border-round gap-3 p-3 relative"
-      style={{ height: 'calc(100vh - 7rem)' }}>
+      style={{ height: 'calc(100vh - 8rem)' }}>
 
       <div className='absolute w-10rem h-10rem bg-bluegray-100'
         style={{ borderRadius: '100%', left: '51rem', top: '10rem' }}></div>
@@ -24,8 +24,8 @@ export default function Portada() {
 
           <div className='col-12 grid grid-nogutter nested-grid'>
             <div className='col-12' style={{ height: 'fit-content' }}>
-              <Button label="Ver Mas" size='small' outlined className='text-yellow-500 py-3 px-6 mr-3' />
-              <Button label="Buscar Servicios" size='small' className='bg-yellow-500 border-yellow-500 py-3 px-6' />
+              <Button label="Ver Mas" size='small' outlined className='text-yellow-500 py-3 px-4 mr-3' />
+              <Button label="Buscar Servicios" size='small' className='bg-yellow-500 border-yellow-500 py-3 px-4' />
             </div>
 
             <div className='col-12 grid grid-nogutter nested-grid gap-3 h-auto'>
