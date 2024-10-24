@@ -2,6 +2,8 @@
 import React from 'react';
 import './Portada.css';
 
+import logo from '../../../assets/logos/logo-png-02.png';
+
 import { Button } from 'primereact/button';
 
 
@@ -10,8 +12,8 @@ export default function Portada() {
     <div className="Portada grid grid-nogutter nested-grid bg-bluegray-800 border-round gap-3 p-3 relative"
       style={{ height: 'calc(100vh - 8rem)' }}>
 
-      <div className='absolute w-10rem h-10rem bg-bluegray-100'
-        style={{ borderRadius: '100%', left: '51rem', top: '10rem' }}></div>
+      <div className='absolute w-13rem h-13rem bg-bluegray-100'
+        style={{ borderRadius: '100%', left: '49.5rem', top: '8rem' }}></div>
 
 
       <section className='bg-bluegray-400 border-round col-6 grid grid-nogutter nested-grid justify-content-center align-content-center align-items-center'>
@@ -22,7 +24,7 @@ export default function Portada() {
             <h4 className='m-0 w-full text-gray-500'>Se parte del HUB numero uno en negocios internacionales.</h4>
           </div>
 
-          <div className='col-12 grid grid-nogutter nested-grid'>
+          <div className='col-12 grid grid-nogutter nested-grid justify-content-center align-content-end gap-6 '>
             <div className='col-12' style={{ height: 'fit-content' }}>
               <Button label="Ver Mas" size='small' outlined className='text-yellow-500 py-3 px-4 mr-3' />
               <Button label="Buscar Servicios" size='small' className='bg-yellow-500 border-yellow-500 py-3 px-4' />
@@ -49,7 +51,22 @@ export default function Portada() {
           </div>
         </div>
       </section >
-      <section className='bg-bluegray-400 border-round col'></section>
+
+
+      <section className='bg-bluegray-400 border-round col grid grid-nogutter nested-grid justify-content-center align-content-center'>
+        <div className='col-10 bg-bluegray-200 border-round h-30rem p-3 grid grid-nogutter nested-grid align-content-start gap-3'>
+
+          <div className='col-12 bg-bluegray-400 h-23rem w-full border-round'
+            style={{ backgroundImage: `url(${logo})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}></div>
+
+          <div className='col-12 bg-bluegray-400 h-3rem w-full border-round flex justify-content-evenly align-items-center'>
+            <p className='flex justify-content-between align-items-center text-white'><i className='text-yellow-500 text-2xl mr-2 pi pi-file'></i> Apertura Compañias</p>
+            <p className='flex justify-content-between align-items-center text-white'><i className='text-yellow-500 text-2xl mr-2 pi pi-id-card'></i>Visa De Residencia</p>
+          </div>
+
+        </div>
+
+      </section >
 
     </div >
   );
