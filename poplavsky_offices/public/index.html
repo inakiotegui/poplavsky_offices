@@ -6,38 +6,77 @@
   <link rel="icon" href="%PUBLIC_URL%/popOffices-logo.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-  <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-  <title>Poplavsky International Offices</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Poplavsky International Offices DMCC: Experts in business expansion to the UAE, offering company formation, bank account opening, market research, debt collection, and commercial representation." />
+  <meta name="keywords"
+    content="Poplavsky International Offices, Business in UAE, Company Formation, Corporate Bank Accounts, Market Research UAE, Debt Collection, Commercial Representation UAE" />
+  <meta name="robots" content="index, follow" />
+  <meta name="author" content="Poplavsky International Offices DMCC" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Poplavsky International Offices: Your Gateway to Business Success in the UAE" />
+  <meta property="og:description"
+    content="Helping Spanish-speaking entrepreneurs expand their businesses to the UAE with expert services in company formation, bank account opening, and commercial representation." />
+  <meta property="og:image" content="%PUBLIC_URL%/popOffices-logo.png" />
+  <meta property="og:url" content="https://www.popoffices.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Poplavsky International Offices: Business Expansion in the UAE" />
+  <meta name="twitter:description"
+    content="Comprehensive services for business expansion into the UAE, including company formation, market research, and debt collection." />
+  <meta name="twitter:image" content="%PUBLIC_URL%/popOffices-logo.png" />
+
+  <!-- Multilingual Setup -->
+  <link rel="alternate" href="https://www.popoffices.com/es" hreflang="es" />
+  <link rel="alternate" href="https://www.popoffices.com" hreflang="en" />
+
+  <!-- Page Title -->
+  <title>Poplavsky International Offices | Business Expansion in the UAE</title>
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
-  <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR_GOOGLE_ANALYTICS_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'YOUR_GOOGLE_ANALYTICS_ID');
+  </script>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+  <!-- Structured Data for SEO -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Poplavsky International Offices DMCC",
+      "url": "https://www.popoffices.com",
+      "logo": "%PUBLIC_URL%/popOffices-logo.png",
+      "description": "Helping businesses expand into the UAE, offering services in company formation, bank account opening, market research, debt collection, and commercial representation.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+971-4-123-4567",
+        "contactType": "Customer Support",
+        "areaServed": "AE, ES",
+        "availableLanguage": "English, Spanish"
+      },
+      "sameAs": [
+        "https://www.facebook.com/popoffices",
+        "https://www.linkedin.com/company/popoffices",
+        "https://twitter.com/popoffices"
+      ]
+    }
+  </script>
+
 </body>
 
 </html>
