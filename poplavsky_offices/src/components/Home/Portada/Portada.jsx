@@ -10,25 +10,26 @@ import { Button } from 'primereact/button';
 export default function Portada() {
   return (
     <div className="Portada grid grid-nogutter nested-grid bg-bluegray-800 border-round gap-3 p-3 relative"
-      style={{ height: 'calc(100vh - 8rem)' }}>
-
-      <div className='absolute w-12rem h-12rem bg-bluegray-100 flex justify-content-center align-items-center shadow-4'
-        style={{ borderRadius: '100%', left: '50rem', top: '6rem' }}>
-
-        <div className='border-3 border-yellow-500 w-6rem h-6rem flex justify-content-center align-items-center'
-          style={{ borderRadius: '100%', left: '49.5rem', top: '8rem' }}>
-          <i className='pi pi-arrow-up-right text-5xl text-yellow-500 font-light'></i>
+      style={{ minHeight: 'calc(100vh - 8rem)' }}>
+      <div
+        className='absolute w-8rem h-8rem bg-bluegray-100 flex justify-content-center align-items-center shadow-4'
+        style={{ borderRadius: '100%', left: '50.5%', top: '3rem', transform: 'translateX(-50.5%)' }}>
+        <div
+          className='border-3 border-yellow-500 w-4rem h-4rem flex justify-content-center align-items-center'
+          style={{ borderRadius: '100%' }}
+        >
+          <i className='pi pi-arrow-up-right text-2xl text-yellow-500 font-light'></i>
         </div>
-
       </div>
 
 
+
       <section className='bg-bluegray-400 border-round col-6 grid grid-nogutter nested-grid justify-content-center align-content-center align-items-center'>
-        <div className='col-10 bg-bluegray-200 border-round h-30rem p-3 grid grid-nogutter nested-grid justify-content-between'>
+        <div className='col-10 bg-bluegray-200 border-round h-25rem p-3 grid grid-nogutter nested-grid justify-content-between'>
 
           <div className='w-full'>
-            <h1 className='m-0 text-6xl w-full'>Somos tu puerta de acceso a Dubai</h1>
-            <h4 className='m-0 w-full text-gray-500'>Se parte del HUB numero uno en negocios internacionales.</h4>
+            <h1 className='m-0 text-5xl w-full'>Somos tu puerta de acceso a Dubai</h1>
+            <h4 className='m-0 w-full font-normal text-gray-500'>Se parte del HUB numero uno en negocios internacionales.</h4>
           </div>
 
           <div className='col-12 grid grid-nogutter nested-grid justify-content-center align-content-end gap-6 '>
@@ -61,9 +62,9 @@ export default function Portada() {
 
 
       <section className='bg-bluegray-400 border-round col grid grid-nogutter nested-grid justify-content-center align-content-center'>
-        <div className='col-10 bg-bluegray-200 border-round h-30rem p-3 grid grid-nogutter nested-grid align-content-start gap-3'>
+        <div className='col-10 bg-bluegray-200 border-round h-25rem p-3 grid grid-nogutter nested-grid align-content-start gap-3'>
 
-          <div className='col-12 bg-bluegray-400 h-23rem w-full border-round'
+          <div className='col-12 bg-bluegray-400 h-18rem w-full border-round'
             style={{ backgroundImage: `url(${logo})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}></div>
 
           <div className='col-12 bg-bluegray-400 h-3rem w-full border-round flex justify-content-evenly align-items-center'>
