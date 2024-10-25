@@ -9,7 +9,7 @@ import { Button } from 'primereact/button';
 
 export default function Portada() {
   return (
-    <div className="Portada grid grid-nogutter nested-grid bg-bluegray-800 border-round gap-3 p-3 relative"
+    <div className="Portada grid grid-nogutter nested-grid bg-bluegray-800 border-round gap-3 p-3 relative fadein animation-duration-1000 animation-iteration-1 animation-ease-in-out"
       style={{ minHeight: 'calc(100vh - 8rem)' }}>
       <div
         className='absolute w-8rem h-8rem bg-bluegray-100 flex justify-content-center align-items-center shadow-4'
@@ -25,7 +25,7 @@ export default function Portada() {
 
 
       <section className='bg-bluegray-400 border-round col-6 grid grid-nogutter nested-grid justify-content-center align-content-center align-items-center'>
-        <div className='col-10 bg-bluegray-200 border-round h-25rem p-3 grid grid-nogutter nested-grid justify-content-between'>
+        <div className='col-10 bg-bluegray-200 border-round h-25rem p-3 grid grid-nogutter nested-grid justify-content-between fadeinleft animation-duration-1000 animation-iteration-1 animation-ease-in-out'>
 
           <div className='w-full'>
             <h1 className='m-0 text-5xl w-full'>Somos tu puerta de acceso a Dubai</h1>
@@ -62,9 +62,9 @@ export default function Portada() {
 
 
       <section className='bg-bluegray-400 border-round col grid grid-nogutter nested-grid justify-content-center align-content-center'>
-        <div className='col-10 bg-bluegray-200 border-round h-25rem p-3 grid grid-nogutter nested-grid align-content-start gap-3'>
+        <div className='col-10 bg-bluegray-200 border-round h-25rem p-3 grid grid-nogutter nested-grid align-content-start gap-3 fadeinright animation-duration-1000 animation-iteration-1 animation-ease-in-out'>
 
-          <div className='col-12 bg-bluegray-400 h-18rem w-full border-round'
+          <div className='col-12 bg-bluegray-400 h-18rem w-full border-round fadein animation-duration-1000 animation-iteration-1 animation-ease-in-out'
             style={{ backgroundImage: `url(${logo})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}></div>
 
           <div className='col-12 bg-bluegray-400 h-3rem w-full border-round flex justify-content-evenly align-items-center'>
