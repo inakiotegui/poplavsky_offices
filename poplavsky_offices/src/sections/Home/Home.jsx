@@ -10,9 +10,9 @@ export default function Home() {
       <nav className="col-12 bg-bluegray-800 border-round">
         <NavBar />
       </nav>
-      <section className='col-12'>
+ {/*      <section className='col-12'>
         <Portada />
-      </section>
+      </section> */}
     </div>
   );
 };
