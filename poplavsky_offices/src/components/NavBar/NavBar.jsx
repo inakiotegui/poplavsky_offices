@@ -20,9 +20,7 @@ export default function NavBar() {
   return (
     <div className="NavBar grid grid-nogutter nested-grid h-5rem p-2 justify-content-between gap-1">
       <div className='col-3 md:col-2 bg-bluegray-400 border-round flex justify-content-center align-items-center'>
-        <p className='m-0 fadeinup animation-duration-200 animation-iteration-1'>
-          <img src={logo} className='w-4rem' alt="Pop Offices Logo" />
-        </p>
+        <img src={logo} className='w-4rem fadeinup animation-duration-200 animation-iteration-1' alt="Pop Offices Logo" />
       </div>
       <div className='col md:col-5 bg-bluegray-400 border-round grid grid-nogutter justify-content-center align-items-center md:px-2'>
         <span className='hidden md:flex gap-4'>
