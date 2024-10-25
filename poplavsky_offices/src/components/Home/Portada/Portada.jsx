@@ -17,10 +17,10 @@ export default function Portada() {
         style={{ borderRadius: '100%', left: '50.5%', top: '3rem', transform: 'translateX(-50.5%)' }}
       >
         <div
-          className='border-3 w-4rem h-4rem flex justify-content-center align-items-center'
+          className='border-3 border-js-yellow w-4rem h-4rem flex justify-content-center align-items-center'
           style={{ borderRadius: '100%' }}
         >
-          <i className='pi pi-arrow-up-right text-2xl font-light'></i>
+          <i className='pi pi-arrow-up-right text-2xl font-light text-js-yellow'></i>
         </div>
       </div>
 

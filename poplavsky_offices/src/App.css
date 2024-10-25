@@ -48,6 +48,14 @@
   background-color: var(--jasmin-yellow) !important;
 }
 
+.border-js-yellow {
+  border-color: var(--jasmin-yellow) !important;
+}
+
+.border-eh-yellow {
+  color: var(--jasmin-yellow) !important;
+}
+
 .bg-eh-yellow {
   background-color: var(--earth-yellow) !important;
 }
