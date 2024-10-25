@@ -1,3 +1,57 @@
+:root {
+  --earth-yellow: #dfaa54;
+  --jasmin-yellow: #f2cb6f;
+}
+
+.p-button.p-button-icon-only {
+  background-color: var(--earth-yellow) !important;
+  border-color: var(--jasmin-yellow) !important;
+}
+
+.p-button.p-button-outlined {
+  background-color: transparent !important;
+  border-color: var(--jasmin-yellow) !important;
+  color: var(--jasmin-yellow);
+  border: 1px solid;
+}
+
+.p-button.p-button-outlined:not(:disabled):hover {
+  color: #ffffff;
+}
+
+.p-button.p-button-text {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  color: var(--jasmin-yellow) !important;
+}
+
 .p-button {
-  /* background-color: red !important; */
+  background-color: var(--earth-yellow) !important;
+  border-color: var(--jasmin-yellow) !important;
+}
+
+.p-button:not(:disabled):hover {
+  background-color: var(--earth-yellow) !important;
+  border-color: var(--jasmin-yellow) !important;
+  color: #ffffff !important;
+}
+
+.p-button-label {
+  font-weight: 400 !important;
+}
+
+.text-js-yellow {
+  color: var(--jasmin-yellow) !important;
+}
+
+.bg-js-yellow {
+  background-color: var(--jasmin-yellow) !important;
+}
+
+.bg-eh-yellow {
+  background-color: var(--earth-yellow) !important;
+}
+
+.text-eh-yellow {
+  color: var(--earth-yellow) !important;
 }

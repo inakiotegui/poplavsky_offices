@@ -17,10 +17,10 @@ export default function Portada() {
         style={{ borderRadius: '100%', left: '50.5%', top: '3rem', transform: 'translateX(-50.5%)' }}
       >
         <div
-          className='border-3 border-yellow-500 w-4rem h-4rem flex justify-content-center align-items-center'
+          className='border-3 w-4rem h-4rem flex justify-content-center align-items-center'
           style={{ borderRadius: '100%' }}
         >
-          <i className='pi pi-arrow-up-right text-2xl text-yellow-500 font-light'></i>
+          <i className='pi pi-arrow-up-right text-2xl font-light'></i>
         </div>
       </div>
 
@@ -34,10 +34,10 @@ export default function Portada() {
             <h4 className='m-0 text-xs md:text-md w-full font-normal text-gray-500'>Se parte del HUB numero uno en negocios internacionales.</h4>
           </div>
 
-          <div className='col-12 grid grid-nogutter nested-grid justify-content-center align-content-end gap-6 '>
+          <div className='col-12 grid grid-nogutter nested-grid justify-content-center align-content-end gap-6 mt-4 md:mt-0 '>
             <div className='col-12' style={{ height: 'fit-content' }}>
-              <Button label="Ver Mas" size='small' outlined className='shadow-2 text-yellow-500 py-2 md:py-3 px-2 md:px-4 mr-2 mt-4 md:mt-0 md:mr-3' />
-              <Button label="Buscar Servicios" size='small' className='shadow-2 bg-yellow-500 border-yellow-500 py-2 md:py-3 px-2 md:px-4' />
+              <Button label="Ver Mas" size='small' outlined className='shadow-2 py-2 md:py-3 px-2 md:px-4 mr-2  md:mr-3' />
+              <Button label="Buscar Servicios" size='small' className='shadow-2 py-2 md:py-3 px-2 md:px-4' />
             </div>
 
             <div className='col-12 grid grid-nogutter nested-grid gap-3 h-auto'>
@@ -71,8 +71,8 @@ export default function Portada() {
             style={{ backgroundImage: `url(${logo})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition: 'center' }}></div>
 
           <div className='col-12 bg-bluegray-400 h-auto w-full border-round flex flex-column md:flex-row justify-content-evenly align-items-center'>
-            <p className='flex text-xs md:text-md m-2 w-6 md:w-full justify-content-between md:justify-content-center align-items-center text-white'><i className='text-yellow-500 text-xl md:text-2xl mr-2 pi pi-file'></i> Apertura Compañias</p>
-            <p className='flex text-xs md:text-md m-2 w-6 md:w-full justify-content-between md:justify-content-center align-items-center text-white'><i className='text-yellow-500 text-xl md:text-2xl mr-2 pi pi-id-card'></i>Visa De Residencia</p>
+            <p className='flex text-xs md:text-md m-2 w-6 md:w-full justify-content-between md:justify-content-center align-items-center text-white'><i className='text-js-yellow text-xl md:text-2xl mr-2 pi pi-file'></i> Apertura Compañias</p>
+            <p className='flex text-xs md:text-md m-2 w-6 md:w-full justify-content-between md:justify-content-center align-items-center text-white'><i className='text-js-yellow text-xl md:text-2xl mr-2 pi pi-id-card'></i>Visa De Residencia</p>
           </div>
 
         </div>
