@@ -12,7 +12,7 @@ export default function AboutUs() {
         <NavBar />
       </nav>
       <section className='col-12'>
-        <h1>AboutUs Component</h1>
+        <h1>AboutUs</h1>
       </section>
     </div>
   );
