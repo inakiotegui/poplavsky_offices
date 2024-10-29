@@ -1,6 +1,8 @@
 :root {
   --earth-yellow: #dfaa54;
   --jasmin-yellow: #f2cb6f;
+  --blue-pop-bg-blue: #293543;
+  --blue-pop-bg-dark: #1f2a33;
 }
 
 .p-button.p-button-icon-only {
@@ -62,4 +64,12 @@
 
 .text-eh-yellow {
   color: var(--earth-yellow) !important;
+}
+
+.bg-blue-dark {
+  background-color: var(--blue-pop-bg-dark) !important;
+}
+
+.bg-blue {
+  background-color: var(--blue-pop-bg-blue) !important;
 }
