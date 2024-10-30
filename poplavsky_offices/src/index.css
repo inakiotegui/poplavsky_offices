@@ -19,7 +19,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
 
-  /* background-color: var(--blue-pop-bg-blue); */ /* TODO Descomentar cuando se termine por completo el home para revelar la magia --> AHREE hay que ejecutar script */
+  background-color: var(--blue-pop-bg-blue);
 }
 
 code {
