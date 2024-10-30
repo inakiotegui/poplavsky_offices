@@ -1,13 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 
-// Define la ruta del directorio que deseas escanear
 const directoryPath = path.join(__dirname);
 
-// Clases a eliminar
 const classesToRemove = ['bg-bluegray-400', 'bg-bluegray-100'];
 
-// Función para eliminar las clases de un archivo
 function removeClassesFromFile(filePath) {
     fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) {
@@ -15,14 +12,12 @@ function removeClassesFromFile(filePath) {
             return;
         }
 
-        // Reemplaza las clases en el contenido del archivo
         let updatedData = data;
         classesToRemove.forEach(className => {
             const regex = new RegExp(`\\b${className}\\b`, 'g');
             updatedData = updatedData.replace(regex, '');
         });
 
-        // Solo escribir el archivo si ha habido cambios
         if (updatedData !== data) {
             fs.writeFile(filePath, updatedData, 'utf8', (err) => {
                 if (err) {
@@ -35,7 +30,6 @@ function removeClassesFromFile(filePath) {
     });
 }
 
-// Función para recorrer el directorio
 function walkDir(dir) {
     fs.readdir(dir, (err, files) => {
         if (err) {
@@ -52,10 +46,8 @@ function walkDir(dir) {
                 }
 
                 if (stat.isDirectory()) {
-                    // Recursivamente recorrer el subdirectorio
                     walkDir(filePath);
                 } else if (path.extname(file) === '.jsx') {
-                    // Si es un archivo .jsx, eliminar clases
                     removeClassesFromFile(filePath);
                 }
             });
@@ -63,5 +55,4 @@ function walkDir(dir) {
     });
 }
 
-// Iniciar el recorrido desde la ruta base
 walkDir(directoryPath);
