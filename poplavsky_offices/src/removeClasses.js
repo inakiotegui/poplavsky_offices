@@ -3,7 +3,7 @@ const path = require('path');
 
 const directoryPath = path.join(__dirname);
 
-const classesToRemove = ['bg-bluegray-400', 'bg-bluegray-100'];
+const classesToRemove = ['bg-bluegray-100', 'bg-bluegray-200', 'bg-bluegray-300', 'bg-bluegray-400', 'bg-bluegray-500', 'bg-bluegray-600', 'bg-bluegray-700', 'bg-bluegray-800'];
 
 function removeClassesFromFile(filePath) {
     fs.readFile(filePath, 'utf8', (err, data) => {

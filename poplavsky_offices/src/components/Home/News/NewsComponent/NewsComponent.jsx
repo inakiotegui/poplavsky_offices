@@ -38,11 +38,11 @@ export default function NewsComponent() {
     return (
       <div>
         <div
-          className='card-news grid grid-nogutter nested-grid gap-3 bg-bluegray-200 border-round m-3 p-3 border-1 border-js-yellow md:border-white hover:shadow-2 cursor-pointer'
+          className='card-news grid grid-nogutter nested-grid gap-3  border-round m-3 p-3 border-1 border-js-yellow md:border-white hover:shadow-2 cursor-pointer'
           style={{ height: '100%' }}
           onClick={() => handleNavigate(item.link_noticia)}
         >
-          <div className='col-12 h-2rem bg-bluegray-600 border-round flex align-items-center gap-3 px-2'>
+          <div className='col-12 h-2rem  border-round flex align-items-center gap-3 px-2'>
             <span className='custom-badge w-1rem h-1rem bg-js-yellow md:bg-gray-500' style={{ borderRadius: '100%' }}></span>
             <p className='card-title m-0 text-xs text-gray-500'> Poplavsky International Offices</p>
           </div>
@@ -52,7 +52,7 @@ export default function NewsComponent() {
             style={{ backgroundImage: `url(${item.imagen})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
           ></div>
 
-          <div className='col-12 h-12rem bg-bluegray-600 border-round text-white'>
+          <div className='col-12 h-12rem  border-round text-white'>
             <h4 className='my-3 mx-2 text-sm'>{item.titulo}</h4>
             <p className='description m-0 mx-2 text-xs font-light'>
               {item.descripcion}
@@ -64,8 +64,8 @@ export default function NewsComponent() {
   };
 
   return (
-    <div className="NewsComponent grid grid-nogutter nested-grid bg-bluegray-800 border-round gap-3 p-3 relative fadein animation-duration-1000 animation-iteration-1 animation-ease-in-out">
-      <div className="col-12 grid grid-nogutter nested-grid justify-content-start align-items-center bg-bluegray-100 border-round pb-2">
+    <div className="NewsComponent grid grid-nogutter nested-grid  border-round gap-3 p-3 relative fadein animation-duration-1000 animation-iteration-1 animation-ease-in-out">
+      <div className="col-12 grid grid-nogutter nested-grid justify-content-start align-items-center  border-round pb-2">
         <div className='col-12 px-4 md:px-8'>
           <CustomDivider />
           <h2 className='m-2'>News</h2>
@@ -73,7 +73,7 @@ export default function NewsComponent() {
         </div>
       </div>
 
-      <div className="col-12 grid grid-nogutter nested-grid justify-content-center align-items-center bg-bluegray-100 border-round gap-3 px-2 md:p-4 md:px-8" style={{ minHeight: '30rem' }}>
+      <div className="col-12 grid grid-nogutter nested-grid justify-content-center align-items-center  border-round gap-3 px-2 md:p-4 md:px-8" style={{ minHeight: '30rem' }}>
         <Carousel
           value={noticias}
           numVisible={4}

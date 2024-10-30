@@ -8,7 +8,7 @@ import NavBar from '../../components/NavBar/NavBar';
 export default function AboutUs() {
   return (
     <div className="AboutUs grid grid-nogutter nested-grid p-3">
-      <nav className="col-12 bg-bluegray-800 border-round">
+      <nav className="col-12  border-round">
         <NavBar />
       </nav>
       <section className='col-12'>

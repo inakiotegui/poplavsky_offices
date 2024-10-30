@@ -8,11 +8,11 @@ import { Button } from "primereact/button";
 export default function Portada() {
   return (
     <div
-      className="Portada grid grid-nogutter nested-grid bg-bluegray-800 border-round gap-3 p-3 relative fadein animation-duration-1000 animation-iteration-1 animation-ease-in-out"
+      className="Portada grid grid-nogutter nested-grid  border-round gap-3 p-3 relative fadein animation-duration-1000 animation-iteration-1 animation-ease-in-out"
       style={{ minHeight: "calc(100vh - 8rem)" }}
     >
       <div
-        className="hidden absolute w-8rem h-8rem bg-bluegray-100 md:flex justify-content-center align-items-center shadow-4"
+        className="hidden absolute w-8rem h-8rem  md:flex justify-content-center align-items-center shadow-4"
         style={{
           borderRadius: "100%",
           left: "50.5%",
@@ -28,9 +28,9 @@ export default function Portada() {
         </div>
       </div>
 
-      <section className="bg-bluegray-400 border-round col-12 md:col-6 grid grid-nogutter nested-grid justify-content-center align-content-center align-items-center">
+      <section className=" border-round col-12 md:col-6 grid grid-nogutter nested-grid justify-content-center align-content-center align-items-center">
         <div
-          className="col-12 md:col-10 bg-bluegray-200 border-round p-3 grid grid-nogutter nested-grid justify-content-between fadeinleft animation-duration-1000 animation-iteration-1 animation-ease-in-out"
+          className="col-12 md:col-10  border-round p-3 grid grid-nogutter nested-grid justify-content-between fadeinleft animation-duration-1000 animation-iteration-1 animation-ease-in-out"
           style={{ minHeight: "25rem" }}
         >
           <div className="w-full">
@@ -59,7 +59,7 @@ export default function Portada() {
 
             <div className="col-12 grid grid-nogutter nested-grid gap-3 h-auto">
               <div
-                className="col border-round bg-bluegray-300 border-white border-1 grid grid-nogutter nested-grid px-3 py-2 shadow-2 "
+                className="col border-round  border-white border-1 grid grid-nogutter nested-grid px-3 py-2 shadow-2 "
                 style={{ height: "fit-content" }}
               >
                 <p className="m-0 col-12 font-semibold text-white text-3xl md:text-5xl">
@@ -71,7 +71,7 @@ export default function Portada() {
               </div>
 
               <div
-                className="col border-round bg-bluegray-300 border-white border-1 grid grid-nogutter nested-grid px-3 py-2 shadow-2 "
+                className="col border-round  border-white border-1 grid grid-nogutter nested-grid px-3 py-2 shadow-2 "
                 style={{ height: "fit-content" }}
               >
                 <p className="m-0 col-12 font-semibold text-white text-3xl md:text-5xl">
@@ -83,7 +83,7 @@ export default function Portada() {
               </div>
 
               <div
-                className="col border-round bg-bluegray-300 border-white border-1 grid grid-nogutter nested-grid px-3 py-2 shadow-2 "
+                className="col border-round  border-white border-1 grid grid-nogutter nested-grid px-3 py-2 shadow-2 "
                 style={{ height: "fit-content" }}
               >
                 <p className="m-0 col-12 font-semibold text-white text-3xl md:text-5xl">
@@ -98,13 +98,13 @@ export default function Portada() {
         </div>
       </section>
 
-      <section className="container-logo-portada bg-bluegray-400 border-round col grid grid-nogutter nested-grid justify-content-center align-content-center">
+      <section className="container-logo-portada  border-round col grid grid-nogutter nested-grid justify-content-center align-content-center">
         <div
-          className="col-12 md:col-10 bg-bluegray-200 border-round p-3 grid grid-nogutter nested-grid justify-content-center align-content-start gap-3 fadeinright animation-duration-1000 animation-iteration-1 animation-ease-in-out"
+          className="col-12 md:col-10  border-round p-3 grid grid-nogutter nested-grid justify-content-center align-content-start gap-3 fadeinright animation-duration-1000 animation-iteration-1 animation-ease-in-out"
           style={{ minHeight: "25rem" }}
         >
           <div
-            className="col-12 bg-bluegray-400 h-20rem w-20rem border-2 border-js-yellow container-shadow-js fadein animation-duration-1000 animation-iteration-1 animation-ease-in-out"
+            className="col-12  h-20rem w-20rem border-2 border-js-yellow container-shadow-js fadein animation-duration-1000 animation-iteration-1 animation-ease-in-out"
             style={{
               backgroundImage: `url(${logo})`,
               backgroundSize: "80%",
@@ -114,7 +114,7 @@ export default function Portada() {
             }}
           ></div>
 
-          <div className="col-12 bg-bluegray-400 h-auto w-full border-round flex flex-column md:flex-row justify-content-evenly align-items-center">
+          <div className="col-12  h-auto w-full border-round flex flex-column md:flex-row justify-content-evenly align-items-center">
             <p className="flex text-xs md:text-md m-2 w-6 md:w-full justify-content-between md:justify-content-center align-items-center text-white">
               <i className="text-js-yellow text-xl md:text-2xl mr-2 pi pi-file"></i>{" "}
               Apertura Compañias
