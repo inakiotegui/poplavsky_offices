@@ -12,7 +12,7 @@ export default function Portada() {
       style={{ minHeight: "calc(100vh - 8rem)" }}
     >
       <div
-        className="hidden absolute w-8rem h-8rem  md:flex justify-content-center align-items-center shadow-4"
+        className="hidden bg-trl-blue absolute w-8rem h-8rem  md:flex justify-content-center align-items-center shadow-4 hover:shadow-5 cursor-pointer"
         style={{
           borderRadius: "100%",
           left: "50.5%",
@@ -21,7 +21,7 @@ export default function Portada() {
         }}
       >
         <div
-          className="border-3 border-js-yellow w-4rem h-4rem flex justify-content-center align-items-center"
+          className="border-1 border-js-yellow w-4rem h-4rem flex justify-content-center align-items-center"
           style={{ borderRadius: "100%" }}
         >
           <i className="pi pi-arrow-up-right text-2xl font-light text-js-yellow"></i>
@@ -59,7 +59,7 @@ export default function Portada() {
 
             <div className="col-12 grid grid-nogutter nested-grid gap-3 h-auto">
               <div
-                className="col border-round  border-white border-1 grid grid-nogutter nested-grid px-3 py-2 shadow-2 "
+                className="col border-round  bg-trl-blue border-gray-500 border-1 grid grid-nogutter nested-grid px-3 py-2 shadow-2 "
                 style={{ height: "fit-content" }}
               >
                 <p className="m-0 col-12 font-semibold text-white text-3xl md:text-5xl">
@@ -71,7 +71,7 @@ export default function Portada() {
               </div>
 
               <div
-                className="col border-round  border-white border-1 grid grid-nogutter nested-grid px-3 py-2 shadow-2 "
+                className="col border-round  bg-trl-blue border-gray-500 border-1 grid grid-nogutter nested-grid px-3 py-2 shadow-2 "
                 style={{ height: "fit-content" }}
               >
                 <p className="m-0 col-12 font-semibold text-white text-3xl md:text-5xl">
@@ -83,7 +83,7 @@ export default function Portada() {
               </div>
 
               <div
-                className="col border-round  border-white border-1 grid grid-nogutter nested-grid px-3 py-2 shadow-2 "
+                className="col border-round  bg-trl-blue border-gray-500 border-1 grid grid-nogutter nested-grid px-3 py-2 shadow-2 "
                 style={{ height: "fit-content" }}
               >
                 <p className="m-0 col-12 font-semibold text-white text-3xl md:text-5xl">
@@ -104,7 +104,7 @@ export default function Portada() {
           style={{ minHeight: "25rem" }}
         >
           <div
-            className="col-12  h-20rem w-20rem border-2 border-js-yellow container-shadow-js fadein animation-duration-1000 animation-iteration-1 animation-ease-in-out"
+            className="col-12 bg-trl-blue h-20rem w-20rem border-2 border-js-yellow container-shadow-js fadein animation-duration-1000 animation-iteration-1 animation-ease-in-out"
             style={{
               backgroundImage: `url(${logo})`,
               backgroundSize: "80%",
