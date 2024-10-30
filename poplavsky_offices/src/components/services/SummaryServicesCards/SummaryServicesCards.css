@@ -1,4 +1,9 @@
+@import "../../../index.css";
 
-.SummaryServicesCards {
-  /* Add your component styles here */
+.SummaryServicesCards:hover {
+  border-color: var(--jasmin-yellow) !important;
+}
+
+.SummaryServicesCards:hover i {
+  color: var(--jasmin-yellow) !important;
 }

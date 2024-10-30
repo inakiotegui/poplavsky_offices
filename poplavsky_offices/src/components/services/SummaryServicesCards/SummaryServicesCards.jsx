@@ -4,8 +4,8 @@ import './SummaryServicesCards.css';
 
 export default function SummaryServicesCards({ service }) {
   return (
-    <div className='SummaryServicesCards col  border-round grid grid-nogutter nested-grid gap-3 p-3 border-white hover:border-js-yellow border-1 relative cursor-pointer'>
-      <i className='pi pi-arrow-up-right absolute text-xl text-gray-200' style={{ right: '10px', top: '10px' }}></i>
+    <div className='SummaryServicesCards col grid grid-nogutter nested-grid bg-trl-blue border-round gap-3 p-3 border-gray-500 hover:border-js-yellow border-1 relative cursor-pointer'>
+      <i className='pi pi-arrow-up-right absolute text-xl text-gray-500' style={{ right: '10px', top: '10px' }}></i>
 
       <div className='col-12 flex justify-content-center align-items-center'
         style={{ height: 'fit-content' }}
