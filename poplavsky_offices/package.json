@@ -21,6 +21,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "rm-container-cl":"node src/removeClasses.js",
     "eject": "react-scripts eject",
     "generate": "hygen component new"
   },
