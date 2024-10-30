@@ -38,12 +38,41 @@ export default function NewsComponent() {
     return (
       <div>
         <div
-          className='card-news grid grid-nogutter nested-grid gap-3  border-round m-3 p-3 border-1 border-js-yellow md:border-white hover:shadow-2 cursor-pointer'
+          className='card-news grid grid-nogutter nested-grid gap-3 bg-trl-blue border-round m-3 p-3 border-1 border-gray-500 hover:shadow-2 cursor-pointer'
           style={{ height: '100%' }}
           onClick={() => handleNavigate(item.link_noticia)}
         >
           <div className='col-12 h-2rem  border-round flex align-items-center gap-3 px-2'>
-            <span className='custom-badge w-1rem h-1rem bg-js-yellow md:bg-gray-500' style={{ borderRadius: '100%' }}></span>
+            <span className='custom-badge w-1rem h-1rem bg-gray-500' style={{ borderRadius: '100%' }}></span>
+            <p className='card-title m-0 text-xs text-gray-500'> Poplavsky International Offices</p>
+          </div>
+
+          <div
+            className='col-12 h-7rem border-round'
+            style={{ backgroundImage: `url(${item.imagen})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+          ></div>
+
+          <div className='col-12 h-12rem  border-round text-white'>
+            <h4 className='my-3 mx-2 text-sm'>{item.titulo}</h4>
+            <p className='description m-0 mx-2 text-xs font-light'>
+              {item.descripcion}
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  const noticiaMobileTemplate = (item) => {
+    return (
+      <div>
+        <div
+          className='card-news grid grid-nogutter nested-grid gap-3 bg-trl-blue border-round m-3 p-3 border-1 border-js-yellow hover:shadow-2 cursor-pointer'
+          style={{ height: '100%' }}
+          onClick={() => handleNavigate(item.link_noticia)}
+        >
+          <div className='col-12 h-2rem  border-round flex align-items-center gap-3 px-2'>
+            <span className='custom-badge w-1rem h-1rem bg-js-yellow' style={{ borderRadius: '100%' }}></span>
             <p className='card-title m-0 text-xs text-gray-500'> Poplavsky International Offices</p>
           </div>
 
@@ -92,7 +121,7 @@ export default function NewsComponent() {
           className="block md:hidden w-full"
           circular
           autoplayInterval={10000}
-          itemTemplate={noticiaTemplate}
+          itemTemplate={noticiaMobileTemplate}
           showNavigators={false}
         />
       </div>
