@@ -5,3 +5,7 @@
 .CustomDivider .p-divider.p-divider-horizontal {
   padding: 0 !important;
 }
+
+.CustomDivider .p-divider .p-divider-content {
+  background: transparent !important;
+}

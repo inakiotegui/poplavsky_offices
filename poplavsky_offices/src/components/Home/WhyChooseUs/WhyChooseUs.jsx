@@ -2,6 +2,7 @@ import React from "react";
 import "./WhyChooseUs.css";
 import data from "../../../utils/jsons/WhyChooseUs/whyChooseUs-data.json";
 
+import CustomDivider from "../../../utils/Divider/CustomDivider/CustomDivider";
 
 export default function WhyChooseUs() {
   return (
@@ -11,6 +12,7 @@ export default function WhyChooseUs() {
     >
       <div className="col-12 md:col-5 px-4 md:px-8 grid grid-nogutter nested-grid justify-content-center align-items-center bg-bluegray-100 border-round">
         <div>
+          <CustomDivider />
           <h2>{data.sectionTitle}</h2>
           <p className="text-sm text-gray-500">
             {data.intro}

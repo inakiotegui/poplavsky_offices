@@ -10,7 +10,7 @@ export default function CustomDivider() {
     <div className="CustomDivider">
       <Divider align="left">
         <div className="inline-flex align-items-center">
-          <img src={dividerIcon} alt="Divider Icon" className="mr-2" />
+          <img src={dividerIcon} alt="Divider Icon" className="mr-2 w-3rem" />
         </div>
       </Divider>
     </div>
