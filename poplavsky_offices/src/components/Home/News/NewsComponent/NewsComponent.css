@@ -1,0 +1,31 @@
+@import "../../../../index.css";
+
+.NewsComponent {
+  /* Add your component styles here */
+}
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Muestra solo 4 líneas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2; /* Ajusta el valor según el espaciado que desees */
+  max-height: calc(1.2em * 4); /* Limita la altura a 4 líneas */
+}
+
+.card-news:hover {
+  border: 1px solid var(--jasmin-yellow) !important;
+}
+
+.card-news:hover .custom-badge {
+  background-color: var(--jasmin-yellow) !important;
+}
+
+.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+  background-color: var(--jasmin-yellow) !important;
+}
+
+.p-carousel .p-carousel-indicators .p-carousel-indicator.p-highlight button {
+  background: #ecfeff;
+  color: var(--jasmin-yellow) !important;
+}
