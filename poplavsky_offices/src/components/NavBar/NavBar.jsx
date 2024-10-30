@@ -19,12 +19,12 @@ export default function NavBar() {
 
   return (
     <div className="NavBar grid grid-nogutter nested-grid h-5rem p-2 justify-content-between gap-1">
-      <div className='col-3 md:col-3  border-round flex justify-content-center align-items-center'>
-        <img src={logo} className='w-3rem md:w-4rem fadeinup animation-duration-200 animation-iteration-1' alt="Pop Offices Logo" />
+      <div className='col-3 md:col-3  border-round flex justify-content-center align-items-center fadeinup animation-duration-200 animation-iteration-1'>
+        <img src={logo} className='w-3rem md:w-4rem' alt="Pop Offices Logo" />
         <div className='hidden h-full md:flex flex-column justify-content-center align-items-center'>
-          <p className='m-0 uppercase text-gray-200' style={{ fontSize: '.8rem', letterSpacing:'2px' }}>Poplavsky</p>
-          <p className='m-0 uppercase text-gray-200' style={{ fontSize: '.50rem', letterSpacing:'2px' }}>International Offices</p>
-          <p className='m-0 uppercase text-js-yellow' style={{ fontSize: '.45rem', letterSpacing:'2px' }}>DUBAI - UAE</p>
+          <p className='m-0 uppercase text-gray-200' style={{ fontSize: '.8rem', letterSpacing: '2px' }}>Poplavsky</p>
+          <p className='m-0 uppercase text-gray-200' style={{ fontSize: '.50rem', letterSpacing: '2px' }}>International Offices</p>
+          <p className='m-0 uppercase text-js-yellow' style={{ fontSize: '.45rem', letterSpacing: '2px' }}>DUBAI - UAE</p>
         </div>
       </div>
       <div className='col md:col-5  border-round grid grid-nogutter justify-content-center align-items-center md:px-2'>
