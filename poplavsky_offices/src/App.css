@@ -1,5 +1,9 @@
 @import "./index.css";
 
+/* ==========================
+   Botones (Buttons)
+   ========================== */
+
 .p-button.p-button-icon-only {
   background-color: var(--earth-yellow) !important;
   border-color: var(--jasmin-yellow) !important;
@@ -10,6 +14,7 @@
   border-color: var(--jasmin-yellow) !important;
   color: var(--jasmin-yellow);
   border: 1px solid;
+  /* Borde sólido */
 }
 
 .p-button.p-button-outlined:not(:disabled):hover {
@@ -37,6 +42,10 @@
   font-weight: 400 !important;
 }
 
+/* ==========================
+   Colores Amarillos (Yellow Colors)
+   ========================== */
+
 .text-js-yellow {
   color: var(--jasmin-yellow) !important;
 }
@@ -61,6 +70,10 @@
   color: var(--earth-yellow) !important;
 }
 
+/* ==========================
+   Colores Azules (Blue Colors)
+   ========================== */
+
 .bg-blue-dark {
   background-color: var(--blue-pop-bg-dark) !important;
 }
@@ -68,6 +81,10 @@
 .bg-blue {
   background-color: var(--blue-pop-bg-blue) !important;
 }
+
+/* ==========================
+   Colores Dorados (Gold Colors)
+   ========================== */
 
 .border-pop-gold {
   color: var(--gold-popla) !important;
@@ -81,6 +98,10 @@
   color: var(--gold-popla) !important;
 }
 
+/* ==========================
+   Colores Amarillos Pop (Yellow Pop Colors)
+   ========================== */
+
 .border-pop-yellow {
   color: var(--yellow-popla) !important;
 }
@@ -90,12 +111,20 @@
 }
 
 .text-pop-yellow {
-  color: var(--yellow-popla) !important;
+  color: var(--yellow-popla) !important;/
 }
+
+/* ==========================
+   Colores Grises (Gray Colors)
+   ========================== */
 
 .text-gray-500 {
   color: #999999 !important;
 }
+
+/* ==========================
+   Sombra de Contenedor (Container Shadow)
+   ========================== */
 
 .container-shadow-js {
   box-shadow: inset 0 0 10px 5px var(--jasmin-yellow);
