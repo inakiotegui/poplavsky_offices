@@ -1,5 +1,15 @@
 @import "primeflex/primeflex.css";
 
+:root {
+  --earth-yellow: #dfaa54;
+  --jasmin-yellow: #f2cb6f;
+  --blue-pop-bg-blue: #293543;
+  --blue-pop-bg-dark: #1f2a33;
+
+  --gold-popla: #e1c799;
+  --yellow-popla: #c39800;
+}
+
 body {
   margin: 0;
   font-family: "Urbanist", -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -8,6 +18,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+
+  /* background-color: var(--blue-pop-bg-blue); */ /* TODO Descomentar cuando se termine por completo el home para revelar la magia --> AHREE hay que ejecutar script */
 }
 
 code {
