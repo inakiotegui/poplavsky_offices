@@ -133,3 +133,7 @@
 .container-shadow-js {
   box-shadow: inset 0 0 10px 5px var(--jasmin-yellow);
 }
+
+.bg-trl-black {
+  background-color: #141414 !important;
+}

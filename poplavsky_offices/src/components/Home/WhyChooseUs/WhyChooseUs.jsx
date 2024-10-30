@@ -13,13 +13,13 @@ export default function WhyChooseUs() {
       <div className="col-12 md:col-5 px-4 md:px-8 grid grid-nogutter nested-grid justify-content-center align-items-center  border-round">
         <div>
           <CustomDivider />
-          <h2 className="m-2">{data.sectionTitle}</h2>
+          <h2 className="text-white text-2xl m-2">{data.sectionTitle}</h2>
           <p className="text-sm text-gray-500">
             {data.intro}
           </p>
         </div>
       </div>
-      <div className="col grid grid-nogutter nested-grid  justify-content-center border-round gap-3 md:gap-0 p-3 border-2 border-js-yellow">
+      <div className="col grid grid-nogutter nested-grid bg-trl-blue justify-content-center border-round gap-3 md:gap-0 p-3 border-2 border-js-yellow">
         {data.reasons.map((reason, index) => (
           <div
             key={index}
@@ -30,12 +30,12 @@ export default function WhyChooseUs() {
             <div className="flex flex-column justify-content-start" style={{ height: '90%' }}>
               <div className="w-full flex align-items-center gap-3 mb-3">
                 <div
-                  className="w-3rem h-3rem  flex justify-content-center align-items-center border-1 border-pop-yellow"
+                  className="w-3rem h-3rem bg-trl-black flex justify-content-center align-items-center border-1 border-pop-yellow"
                   style={{ borderRadius: "100px" }}
                 >
                   <i className={`${reason.icon} text-xl text-pop-gold`}></i>
                 </div>
-                <p className="m-0">{reason.title}</p>
+                <p className="text-white text-xl m-0">{reason.title}</p>
               </div>
               <p className="text-sm m-0 text-gray-500">
                 {reason.description}

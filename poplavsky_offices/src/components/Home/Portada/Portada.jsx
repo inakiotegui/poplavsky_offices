@@ -37,7 +37,7 @@ export default function Portada() {
             <h1 className="text-white m-0 text-3xl md:text-5xl w-full">
               Somos tu puerta de acceso a Dubai
             </h1>
-            <h4 className="m-0 text-xs md:text-md w-full font-normal text-gray-500">
+            <h4 className="m-0 text-xs md:text-lg w-full font-normal text-gray-500">
               Se parte del HUB numero uno en negocios internacionales.
             </h4>
           </div>
@@ -115,11 +115,11 @@ export default function Portada() {
           ></div>
 
           <div className="col-12  h-auto w-full border-round flex flex-column md:flex-row justify-content-evenly align-items-center">
-            <p className="flex text-xs md:text-md m-2 w-6 md:w-full justify-content-between md:justify-content-center align-items-center text-white">
+            <p className="flex text-xs md:text-lg m-2 w-6 md:w-full justify-content-between md:justify-content-center align-items-center text-white">
               <i className="text-js-yellow text-xl md:text-2xl mr-2 pi pi-file"></i>{" "}
               Apertura Compañias
             </p>
-            <p className="flex text-xs md:text-md m-2 w-6 md:w-full justify-content-between md:justify-content-center align-items-center text-white">
+            <p className="flex text-xs md:text-lg m-2 w-6 md:w-full justify-content-between md:justify-content-center align-items-center text-white">
               <i className="text-js-yellow text-xl md:text-2xl mr-2 pi pi-id-card"></i>
               Visa De Residencia
             </p>
