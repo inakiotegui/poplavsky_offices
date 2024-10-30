@@ -3,6 +3,9 @@
   --jasmin-yellow: #f2cb6f;
   --blue-pop-bg-blue: #293543;
   --blue-pop-bg-dark: #1f2a33;
+
+  --gold-popla: #e1c799;
+  --yellow-popla: #c39800;
 }
 
 .p-button.p-button-icon-only {
@@ -55,7 +58,7 @@
 }
 
 .border-eh-yellow {
-  color: var(--jasmin-yellow) !important;
+  color: var(--earth-yellow) !important;
 }
 
 .bg-eh-yellow {
@@ -72,4 +75,32 @@
 
 .bg-blue {
   background-color: var(--blue-pop-bg-blue) !important;
+}
+
+.border-pop-gold {
+  color: var(--gold-popla) !important;
+}
+
+.bg-pop-gold {
+  background-color: var(--gold-popla) !important;
+}
+
+.text-pop-gold {
+  color: var(--gold-popla) !important;
+}
+
+.border-pop-yellow {
+  color: var(--yellow-popla) !important;
+}
+
+.bg-pop-yellow {
+  background-color: var(--yellow-popla) !important;
+}
+
+.text-pop-yellow {
+  color: var(--yellow-popla) !important;
+}
+
+.text-gray-500 {
+  color: #999999 !important;
 }
