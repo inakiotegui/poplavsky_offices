@@ -16,14 +16,14 @@ export default function Home() {
         <Portada />
       </section>
 
-      <section className="col-12">
+      <section className="col-12 mb-8">
         <SummaryServices />
       </section>
 
-      <section className="col-12">
+      <section className="col-12 mb-8">
         <WhyChooseUs />
       </section>
-      <section className="col-12">
+      <section className="col-12 mb-8">
         <NewsComponent />
       </section>
     </div>
