@@ -28,7 +28,7 @@ export default function SummaryServices() {
   ]
 
   return (
-    <div className="SummaryServices grid grid-nogutter nested-grid  border-round gap-8 p-3 relative fadein animation-duration-1000 animation-iteration-1 animation-ease-in-out">
+    <div className="SummaryServices grid grid-nogutter nested-grid  border-round gap-4 md:gap-8 p-3 relative fadein animation-duration-1000 animation-iteration-1 animation-ease-in-out">
       {services.map((service, index) =>
         <SummaryServicesCards service={service} />
       )}
