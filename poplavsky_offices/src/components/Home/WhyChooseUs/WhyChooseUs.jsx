@@ -10,11 +10,11 @@ export default function WhyChooseUs() {
       className="WhyChooseUs grid grid-nogutter nested-grid  border-round gap-3 p-3 relative fadein animation-duration-1000 animation-iteration-1 animation-ease-in-out"
       style={{ minHeight: "30rem" }}
     >
-      <div className="col-12 md:col-5 px-4 md:px-8 grid grid-nogutter nested-grid justify-content-center align-items-center  border-round">
+      <div className="col-12 md:col-5 px-4 md:px-6 grid grid-nogutter nested-grid justify-content-center align-items-center  border-round">
         <div>
           <CustomDivider />
-          <h2 className="text-white text-2xl m-2">{data.sectionTitle}</h2>
-          <p className="text-sm text-gray-500">
+          <h2 className="text-white text-2xl md:text-4xl m-2">{data.sectionTitle}</h2>
+          <p className="text-sm md:text-lg text-gray-500">
             {data.intro}
           </p>
         </div>

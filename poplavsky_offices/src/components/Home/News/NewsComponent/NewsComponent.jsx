@@ -66,10 +66,10 @@ export default function NewsComponent() {
   return (
     <div className="NewsComponent grid grid-nogutter nested-grid  border-round gap-3 p-3 relative fadein animation-duration-1000 animation-iteration-1 animation-ease-in-out">
       <div className="col-12 grid grid-nogutter nested-grid justify-content-start align-items-center  border-round pb-2">
-        <div className='col-12 px-4 md:px-8'>
+        <div className='col-12 px-4 md:px-6'>
           <CustomDivider />
-          <h2 className='text-white text-2xl m-2'>News</h2>
-          <p className='text-sm text-gray-500 m-0'>Read the success stories and testimonials from our valued clients. Discover why they chose Poplavsky to achieve their dreams of establishing and growing their businesses in the United Arab Emirates.</p>
+          <h2 className='text-white text-2xl md:text-4xl m m-2'>News</h2>
+          <h4 className='m-0 text-xs md:text-lg w-full font-normal text-gray-500'>Read the success stories and testimonials from our valued clients. Discover why they chose Poplavsky to achieve their dreams of establishing and growing their businesses in the United Arab Emirates.</h4>
         </div>
       </div>
 

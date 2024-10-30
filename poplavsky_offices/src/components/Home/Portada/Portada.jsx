@@ -34,7 +34,7 @@ export default function Portada() {
           style={{ minHeight: "25rem" }}
         >
           <div className="w-full">
-            <h1 className="text-white m-0 text-3xl md:text-5xl w-full">
+            <h1 className="text-white m-0 text-3xl md:text-6xl w-full">
               Somos tu puerta de acceso a Dubai
             </h1>
             <h4 className="m-0 text-xs md:text-lg w-full font-normal text-gray-500">
