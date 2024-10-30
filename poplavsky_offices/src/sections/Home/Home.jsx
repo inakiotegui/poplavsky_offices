@@ -22,6 +22,7 @@ export default function Home() {
       <section className="col-12">
         <WhyChooseUs />
       </section>
+   
     </div>
   );
 }
