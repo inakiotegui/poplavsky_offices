@@ -1,4 +1,12 @@
+@import "../../../index.css";
 
 .Portada {
   /* Add your component styles here */
+}
+
+.container-logo-portada {
+  background-image: url("../../../assets/fondos/AbstractDesign.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

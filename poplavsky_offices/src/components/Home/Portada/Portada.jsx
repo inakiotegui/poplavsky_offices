@@ -98,18 +98,19 @@ export default function Portada() {
         </div>
       </section>
 
-      <section className="bg-bluegray-400 border-round col grid grid-nogutter nested-grid justify-content-center align-content-center">
+      <section className="container-logo-portada bg-bluegray-400 border-round col grid grid-nogutter nested-grid justify-content-center align-content-center">
         <div
-          className="col-12 md:col-10 bg-bluegray-200 border-round p-3 grid grid-nogutter nested-grid align-content-start gap-3 fadeinright animation-duration-1000 animation-iteration-1 animation-ease-in-out"
+          className="col-12 md:col-10 bg-bluegray-200 border-round p-3 grid grid-nogutter nested-grid justify-content-center align-content-start gap-3 fadeinright animation-duration-1000 animation-iteration-1 animation-ease-in-out"
           style={{ minHeight: "25rem" }}
         >
           <div
-            className="col-12 bg-bluegray-400 h-18rem w-full border-round fadein animation-duration-1000 animation-iteration-1 animation-ease-in-out"
+            className="col-12 bg-bluegray-400 h-20rem w-20rem border-2 border-js-yellow container-shadow-js fadein animation-duration-1000 animation-iteration-1 animation-ease-in-out"
             style={{
               backgroundImage: `url(${logo})`,
-              backgroundSize: "contain",
+              backgroundSize: "80%",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
+              borderRadius: "100%",
             }}
           ></div>
 

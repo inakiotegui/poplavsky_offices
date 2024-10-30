@@ -96,3 +96,7 @@
 .text-gray-500 {
   color: #999999 !important;
 }
+
+.container-shadow-js {
+  box-shadow: inset 0 0 10px 5px var(--jasmin-yellow);
+}
