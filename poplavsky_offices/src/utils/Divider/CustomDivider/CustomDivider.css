@@ -1,0 +1,7 @@
+.CustomDivider .p-divider-horizontal:before {
+  display: none !important;
+}
+
+.CustomDivider .p-divider.p-divider-horizontal {
+  padding: 0 !important;
+}
