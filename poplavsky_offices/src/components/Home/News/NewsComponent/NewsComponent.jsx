@@ -68,7 +68,7 @@ export default function NewsComponent() {
       <div className="col-12 grid grid-nogutter nested-grid justify-content-start align-items-center  border-round pb-2">
         <div className='col-12 px-4 md:px-8'>
           <CustomDivider />
-          <h2 className='m-2'>News</h2>
+          <h2 className='text-white text-2xl m-2'>News</h2>
           <p className='text-sm text-gray-500 m-0'>Read the success stories and testimonials from our valued clients. Discover why they chose Poplavsky to achieve their dreams of establishing and growing their businesses in the United Arab Emirates.</p>
         </div>
       </div>
