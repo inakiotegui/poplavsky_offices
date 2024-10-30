@@ -1,4 +1,4 @@
-@Import "./index.css";
+@import "./index.css";
 
 .p-button.p-button-icon-only {
   background-color: var(--earth-yellow) !important;

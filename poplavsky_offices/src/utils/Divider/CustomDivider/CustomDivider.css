@@ -4,6 +4,8 @@
 
 .CustomDivider .p-divider.p-divider-horizontal {
   padding: 0 !important;
+  margin: 1.25rem 0 0 0 !important;
+
 }
 
 .CustomDivider .p-divider .p-divider-content {

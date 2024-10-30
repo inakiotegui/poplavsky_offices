@@ -4,6 +4,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import Portada from "../../components/Home/Portada/Portada";
 import SummaryServices from "../../components/services/SummaryServices/SummaryServices";
 import WhyChooseUs from "../../components/Home/WhyChooseUs/WhyChooseUs";
+import NewsComponent from "../../components/Home/News/NewsComponent/NewsComponent";
 
 export default function Home() {
   return (
@@ -22,7 +23,9 @@ export default function Home() {
       <section className="col-12">
         <WhyChooseUs />
       </section>
-   
+      <section className="col-12">
+        <NewsComponent />
+      </section>
     </div>
   );
 }
