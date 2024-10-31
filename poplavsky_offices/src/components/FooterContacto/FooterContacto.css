@@ -1,0 +1,12 @@
+.FooterContacto {
+  position: relative;
+  overflow: hidden;
+}
+
+.FooterContacto img.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: fill;
+  z-index: -1;
+}

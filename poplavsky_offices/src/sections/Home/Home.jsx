@@ -5,6 +5,7 @@ import Portada from "../../components/Home/Portada/Portada";
 import SummaryServices from "../../components/services/SummaryServices/SummaryServices";
 import WhyChooseUs from "../../components/Home/WhyChooseUs/WhyChooseUs";
 import NewsComponent from "../../components/Home/News/NewsComponent/NewsComponent";
+import FooterContacto from "../../components/FooterContacto/FooterContacto";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <section className="col-12 mb-3 md:mb-8">
         <NewsComponent />
       </section>
+      <FooterContacto />
     </div>
   );
 }
