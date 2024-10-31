@@ -35,23 +35,23 @@ export default function Portada() {
         >
           <div className="w-full">
             <h1 className="text-white m-0 text-3xl md:text-6xl w-full">
-              Somos tu puerta de acceso a Dubai
+              We are your gateway to Dubai
             </h1>
             <h4 className="m-0 text-xs md:text-lg w-full font-normal text-gray-500">
-              Se parte del HUB numero uno en negocios internacionales.
+              Be part of the number one HUB for international business.
             </h4>
           </div>
 
           <div className="col-12 grid grid-nogutter nested-grid justify-content-center align-content-end gap-6 mt-4 md:mt-0 ">
             <div className="col-12" style={{ height: "fit-content" }}>
               <Button
-                label="Ver Mas"
+                label="See More"
                 size="small"
                 outlined
                 className="shadow-2 py-2 md:py-3 px-2 md:px-4 mr-2  md:mr-3"
               />
               <Button
-                label="Buscar Servicios"
+                label="Search Services"
                 size="small"
                 className="shadow-2 py-2 md:py-3 px-2 md:px-4"
               />
@@ -66,7 +66,7 @@ export default function Portada() {
                   200+
                 </p>
                 <span className="text-gray-500 text-xs font-light col-12">
-                  Clientes Felices
+                  Happy Clients
                 </span>
               </div>
 
@@ -78,7 +78,7 @@ export default function Portada() {
                   10k+
                 </p>
                 <span className="text-gray-500 text-xs font-light col-12">
-                  Servicios Aplicados
+                  Applied Services
                 </span>
               </div>
 
@@ -90,7 +90,7 @@ export default function Portada() {
                   16+
                 </p>
                 <span className="text-gray-500 text-xs font-light col-12">
-                  Años De Experiencia
+                  Years Of Experience
                 </span>
               </div>
             </div>
@@ -117,11 +117,11 @@ export default function Portada() {
           <div className="col-12  h-auto w-full border-round flex flex-column md:flex-row justify-content-evenly align-items-center">
             <p className="flex text-xs md:text-lg m-2 w-6 md:w-full justify-content-between md:justify-content-center align-items-center text-white">
               <i className="text-js-yellow text-xl md:text-2xl mr-2 pi pi-file"></i>{" "}
-              Apertura Compañias
+              Company Formation
             </p>
             <p className="flex text-xs md:text-lg m-2 w-6 md:w-full justify-content-between md:justify-content-center align-items-center text-white">
               <i className="text-js-yellow text-xl md:text-2xl mr-2 pi pi-id-card"></i>
-              Visa De Residencia
+              Residence Visa
             </p>
           </div>
         </div>

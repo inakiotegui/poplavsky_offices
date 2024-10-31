@@ -12,17 +12,17 @@ export default function SummaryServices() {
   const services = [
     {
       icon: icon1,
-      description: 'Asistencia en la apertura de Cuentas Bancaria Corporativas',
+      description: 'Assistance with Corporate Bank Account Opening',
       link: '/services/1',
     },
     {
       icon: icon2,
-      description: 'Constitución de Empresas en la Zona Franca Más Adecuada para Su Negocio',
+      description: 'Company Formation in the Most Suitable Free Zone for Your Business',
       link: '/services/2',
     },
     {
       icon: icon3,
-      description: 'Realización de Estudios de Mercado para Evaluar Oportunidades Comerciales',
+      description: 'Conducting Market Studies to Evaluate Business Opportunities',
       link: '/services/3',
     }
   ]
