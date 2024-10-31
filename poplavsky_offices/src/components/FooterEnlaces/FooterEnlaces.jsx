@@ -58,7 +58,7 @@ export default function FooterEnlaces() {
         </div>
       </div>
 
-      <div className="flex flex-row justify-content-around w-full p-0 bg-black-alpha-60">
+      <div className="flex flex-row justify-content-around border-round w-full p-0 bg-black-alpha-60">
         <div className="flex flex-column md:flex-row justify-content-center align-content-start md:align-items-center gap-2 md:gap-3 p-4">
           <p className="text-lefttext-sm m-0">
             ©2024 Poplavsky. Todos los derechos reservados.

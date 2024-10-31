@@ -3,6 +3,7 @@ import "./Services.css";
 
 import NavBar from "../../components/NavBar/NavBar";
 import FooterContacto from "../../components/FooterContacto/FooterContacto";
+import FooterEnlaces from "../../components/FooterEnlaces/FooterEnlaces";
 
 export default function Services() {
   return (
@@ -14,6 +15,7 @@ export default function Services() {
         <h1>Services</h1>
       </section>
       <FooterContacto />
+      <FooterEnlaces />
     </div>
   );
 }
