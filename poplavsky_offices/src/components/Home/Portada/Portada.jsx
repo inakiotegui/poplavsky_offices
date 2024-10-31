@@ -48,12 +48,12 @@ export default function Portada() {
                 label="See More"
                 size="small"
                 outlined
-                className="shadow-2 py-2 md:py-3 px-2 md:px-4 mr-2  md:mr-3"
+                className="shadow-2 py-2 md:py-3 px-2 md:px-4 mr-2  md:mr-3 hover:shadow-6"
               />
               <Button
                 label="Search Services"
                 size="small"
-                className="shadow-2 py-2 md:py-3 px-2 md:px-4"
+                className="shadow-2 py-2 md:py-3 px-2 md:px-4 hover:shadow-6"
               />
             </div>
 
