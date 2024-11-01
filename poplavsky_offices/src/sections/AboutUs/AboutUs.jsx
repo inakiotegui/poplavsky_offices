@@ -3,6 +3,7 @@ import "./AboutUs.css";
 
 import NavBar from "../../components/NavBar/NavBar";
 import FooterContacto from "../../components/FooterContacto/FooterContacto";
+import FooterEnlaces from "../../components/FooterEnlaces/FooterEnlaces";
 
 export default function AboutUs() {
   return (
@@ -14,6 +15,7 @@ export default function AboutUs() {
         <h1>AboutUs</h1>
       </section>
       <FooterContacto />
+      <FooterEnlaces />
     </div>
   );
 }

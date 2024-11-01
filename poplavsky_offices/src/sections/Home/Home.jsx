@@ -6,6 +6,7 @@ import SummaryServices from "../../components/services/SummaryServices/SummarySe
 import WhyChooseUs from "../../components/Home/WhyChooseUs/WhyChooseUs";
 import NewsComponent from "../../components/Home/News/NewsComponent/NewsComponent";
 import FooterContacto from "../../components/FooterContacto/FooterContacto";
+import FooterEnlaces from "../../components/FooterEnlaces/FooterEnlaces";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <NewsComponent />
       </section>
       <FooterContacto />
+      <FooterEnlaces />
     </div>
   );
 }
