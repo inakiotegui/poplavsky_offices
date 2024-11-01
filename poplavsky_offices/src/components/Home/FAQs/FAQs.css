@@ -1,0 +1,13 @@
+.FAQs {
+  /* Add your component styles here */
+}
+
+.FAQs .description {
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Muestra solo 4 líneas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.2; /* Ajusta el valor según el espaciado que desees */
+  max-height: calc(1.2em * 4); /* Limita la altura a 4 líneas */
+}
