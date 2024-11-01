@@ -14,8 +14,10 @@ export default function Services() {
       <section className="col-12">
         <h1>Services</h1>
       </section>
-      <FooterContacto />
-      <FooterEnlaces />
+      <section className="col-12 mb-3 md:mb-8 bg-blue-dark">
+        <FooterContacto />
+        <FooterEnlaces />
+      </section>
     </div>
   );
 }
