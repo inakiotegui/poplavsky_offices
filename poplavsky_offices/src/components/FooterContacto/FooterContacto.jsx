@@ -6,13 +6,13 @@ import fondo from "../../assets/fondos/fondo3.webp";
 
 export default function FooterContacto() {
   return (
-    <div className="FooterContacto grid grid-nogutter nested-grid border-round flex-column md:flex-row p-3 gap-3 justify-content-center md:h-15rem">
+    <div className="FooterContacto grid grid-nogutter nested-grid flex-column md:flex-row p-3 m-2 gap-3 justify-content-center md:h-15rem bg-blue">
       <img
         src={fondo}
         alt="diseño de fondo"
         className="background-image w-full h-full"
       />
-      <div className="col-12 md:col-8 p-1 flex flex-column align-items-start justify-content-center">
+      <div className="col-12 md:col-8 p-1 flex flex-column align-items-start justify-content-center relative z-2">
         <h2 className="text-white text-2xl md:text-4xl m-2">
           Start Your Journey to Success in Dubai
         </h2>
