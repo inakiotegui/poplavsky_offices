@@ -7,6 +7,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  object-fit: fill;
+  object-fit: cover;
+  object-position: left;
   z-index: 0;
+}
+
+@media (min-width: 1400px) {
+  .FooterContacto img.background-image {
+    object-position: center;
+  }
 }
