@@ -1,6 +1,5 @@
 import React from "react";
 import "./CardsInfoAboutUs.css";
-import Divider from "../../../utils/Divider/CustomDivider/CustomDivider";
 
 export default function CardInfoAboutUs({
   imagen,
@@ -13,7 +12,6 @@ export default function CardInfoAboutUs({
 
   return (
     <div className="grid grid-nogutter col-12 justify-content-center align-items-center mt-4 mb-4 p-0 text-white">
-      {index === 0 && <Divider />}
       <div
         className={`flex flex-column w-full justify-content-center align-items-center gap-8 mb-4 mt-4 ${
           !isEven ? "md:flex-row" : "md:flex-row-reverse"
@@ -25,7 +23,7 @@ export default function CardInfoAboutUs({
           <p className="text-xs md:text-base">{texto2}</p>
         </div>
 
-        <div className="flex justify-content-center align-items-center w-full h-15rem md:h-25rem md:w-5 border-round image-container container-shadow-js-os">
+        <div className="flex flex-column justify-content-center align-items-center w-full h-15rem md:h-25rem md:w-5 border-round image-container container-shadow-js-os">
           <img
             src={imagen}
             alt={titulo}
