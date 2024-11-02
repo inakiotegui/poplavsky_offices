@@ -1,3 +1,7 @@
+.cont-left {
+  min-height: 18rem;
+}
+
 .benefits-container {
   border-top: 1px solid var(--blue-pop-bg-dark);
 }
@@ -27,8 +31,14 @@
   border-radius: 2px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 923px) {
   .benefit {
     border-right: 1px solid var(--blue-pop-bg-dark);
+  }
+}
+
+@media (max-width: 923px) {
+  .benefits-container {
+    flex-direction: column !important;
   }
 }
