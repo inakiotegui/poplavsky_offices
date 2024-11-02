@@ -1,0 +1,34 @@
+.benefits-container {
+  border-top: 1px solid var(--blue-pop-bg-dark);
+}
+
+/* .benefit {
+  border-right: 1px solid var(--blue-pop-bg-dark);
+} */
+
+.solution {
+  position: relative;
+  background: linear-gradient(
+    to right,
+    var(--blue-pop-bg-dark-translucent),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+/* Línea amarilla */
+.solution::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: var(--yellow-popla);
+  border-radius: 2px;
+}
+
+@media (min-width: 768px) {
+  .benefit {
+    border-right: 1px solid var(--blue-pop-bg-dark);
+  }
+}
