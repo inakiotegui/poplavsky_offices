@@ -17,15 +17,15 @@ export default function InfoFinalAboutUs() {
               business’s expansion into the UAE.
             </p>
           </div>
-          <div className="benefits-container w-full flex flex-column md:flex-row justify-content-center align-content-center pt-3 m-0">
-            <p className="flex benefit p-3 m-0 text-sm">
+          <div className="benefits-container w-full flex flex-column md:flex-row justify-content-around align-content-center pt-3 m-0">
+            <p className="flex p-3 m-0 text-sm">
               <i className="pi pi-globe pr-2 text-eh-yellow"></i> Global Network
             </p>
             <p className="flex benefit p-3 m-0 text-sm">
               <i className="pi pi-users pr-2 text-eh-yellow"></i>Comprehensive
               Services
             </p>
-            <p className="flex p-3 m-0 text-sm">
+            <p className="flex  benefit p-3 m-0 text-sm">
               <i className="pi pi-chart-line pr-2 text-eh-yellow"></i>Long-Term
               Growth
             </p>

@@ -31,13 +31,13 @@
   border-radius: 2px;
 }
 
-@media (min-width: 923px) {
+@media (min-width: 987px) {
   .benefit {
-    border-right: 1px solid var(--blue-pop-bg-dark);
+    border-left: 1px solid var(--blue-pop-bg-dark);
   }
 }
 
-@media (max-width: 923px) {
+@media (max-width: 987px) {
   .benefits-container {
     flex-direction: column !important;
   }
