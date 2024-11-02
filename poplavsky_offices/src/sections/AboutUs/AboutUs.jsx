@@ -4,6 +4,7 @@ import "./AboutUs.css";
 import NavBar from "../../components/NavBar/NavBar";
 import FooterContacto from "../../components/FooterContacto/FooterContacto";
 import FooterEnlaces from "../../components/FooterEnlaces/FooterEnlaces";
+import InfoAboutUs from "../../components/AboutUs/InfoAboutUs";
 
 export default function AboutUs() {
   return (
@@ -13,6 +14,9 @@ export default function AboutUs() {
       </nav>
       <section className="col-12">
         <h1>AboutUs</h1>
+      </section>
+      <section className="col-12">
+        <InfoAboutUs />
       </section>
       <section className="col-12 mb-3 md:mb-8 bg-blue-dark">
         <FooterContacto />

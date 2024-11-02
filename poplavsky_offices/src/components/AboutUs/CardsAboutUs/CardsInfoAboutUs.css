@@ -1,0 +1,8 @@
+.image-container {
+  max-width: 800px;
+  overflow: hidden;
+}
+
+.image-custom-base {
+  object-fit: cover;
+}
