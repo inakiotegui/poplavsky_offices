@@ -11,7 +11,7 @@ export default function InfoFinalAboutUs() {
               <h2 className="text-2xl md:text-4xl m-2">
                 Comprehensive Solutions and a Global Network for Business Growth
               </h2>
-              <p className="m-0 pb-4 text-xs md:text-base w-full font-normal text-gray-400">
+              <p className="m-0 pb-4 text-sm md:text-base w-full font-normal text-gray-400">
                 Thanks to our extensive global network of partnerships with
                 businesses and authorities across multiple countries, we are
                 uniquely positioned to offer the best possible solutions for
@@ -40,7 +40,7 @@ export default function InfoFinalAboutUs() {
             In addition to our core services, we provide a comprehensive suite
             of business solutions, including:
           </p>
-          <div className="flex flex-column gap-3 w-full text-gray-400 p-2">
+          <div className="flex flex-column gap-3 w-full text-gray-400 text-sm md:text-base p-2">
             <p className="solution p-3 m-0">
               Expert company formation in the UAE’s most suitable free zone for
               your business.
@@ -62,7 +62,7 @@ export default function InfoFinalAboutUs() {
           </div>
         </div>
       </div>
-      <div className="col-8 justify-content-center align-items-center text-center text-white text-base">
+      <div className="col-8 justify-content-center align-items-center text-center text-white text-sm md:text-base">
         <p>
           We are dedicated to supporting you at every step of your business
           journey in the UAE, ensuring not just entry, but sustained growth and
