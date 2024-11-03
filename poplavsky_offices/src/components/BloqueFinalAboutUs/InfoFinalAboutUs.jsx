@@ -3,7 +3,7 @@ import "./InfoFinalAboutUs.css";
 
 export default function InfoFinalAboutUs() {
   return (
-    <div className="grid grid-nogutter nested-grid flex-column md:flex-row p-2 gap-6 justify-content-center mt-3 mb-4">
+    <div className="grid grid-nogutter nested-grid flex-column md:flex-row p-2 gap-6 justify-content-center align-items-center mt-3 mb-4">
       <div className="flex flex-column md:flex-row w-full align-items-start justify-content-center gap-6">
         <div className="cont-left col-12 md:col-5 p-0">
           <div className="p-2 md:p-4 flex flex-column align-items-start justify-content-start text-white border-1 border-solid border-round border-bluegray-900">
@@ -62,8 +62,8 @@ export default function InfoFinalAboutUs() {
           </div>
         </div>
       </div>
-      <div>
-        <p className="flex w-full justify-content-center align-items-center text-center text-white text-base">
+      <div className="col-8 justify-content-center align-items-center text-center text-white text-base">
+        <p>
           We are dedicated to supporting you at every step of your business
           journey in the UAE, ensuring not just entry, but sustained growth and
           success.
