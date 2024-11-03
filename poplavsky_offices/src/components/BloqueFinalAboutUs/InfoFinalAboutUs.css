@@ -6,10 +6,6 @@
   border-top: 1px solid var(--blue-pop-bg-dark);
 }
 
-/* .benefit {
-  border-right: 1px solid var(--blue-pop-bg-dark);
-} */
-
 .solution {
   position: relative;
   background: linear-gradient(
@@ -19,7 +15,6 @@
   );
 }
 
-/* Línea amarilla */
 .solution::before {
   content: "";
   position: absolute;
