@@ -8,7 +8,7 @@ export default function BannerSeccion() {
   return (
     <div className="BannerSeccion">
       <div
-        className="grid grid-nogutter nested-grid justify-content-center align-content-center  h-22rem"
+        className="grid grid-nogutter nested-grid justify-content-center align-content-center h-22rem scalein animation-duration-300 animation-iteration-1"
         style={{
           backgroundImage: `url(${fondo}), url(${logoopac})`,
           backgroundSize: "contain, 20%",
