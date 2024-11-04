@@ -104,7 +104,7 @@ export default function Portada() {
           style={{ minHeight: "25rem" }}
         >
           <div
-            className="col-12 bg-trl-blue h-17rem md:h-20rem w-17rem md:w-20rem border-2 border-js-yellow container-shadow-js fadein animation-duration-1000 animation-iteration-1 animation-ease-in-out"
+            className="col-12 bg-trl-blue h-17rem md:h-20rem w-17rem md:w-20rem fadein animation-duration-1000 animation-iteration-1 animation-ease-in-out"
             style={{
               backgroundImage: `url(${logo})`,
               backgroundSize: "80%",
