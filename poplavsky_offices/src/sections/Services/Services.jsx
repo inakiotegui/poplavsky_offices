@@ -4,7 +4,7 @@ import "./Services.css";
 import NavBar from "../../components/NavBar/NavBar";
 import FooterContacto from "../../components/FooterContacto/FooterContacto";
 import FooterEnlaces from "../../components/FooterEnlaces/FooterEnlaces";
-import BannerServices from "../../components/BannerServices/BannerServices";
+import BannerServices from "../../components/services/BannerServices/BannerServices";
 
 export default function Services() {
   return (
