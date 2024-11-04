@@ -15,7 +15,7 @@ export default function Services() {
       <section className="col-12">
         <BannerServices />
       </section>
-      <section className="col-12 mb-3 md:mb-8 bg-blue-dark">
+      <section className="col-12 bg-blue-dark">
         <FooterContacto />
         <FooterEnlaces />
       </section>
