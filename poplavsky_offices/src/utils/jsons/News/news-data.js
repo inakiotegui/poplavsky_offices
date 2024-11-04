@@ -1,6 +1,10 @@
 import dubaiImage1 from '../../../assets/img/dubai8.webp';
 import dubaiImage2 from '../../../assets/img/dubai2.webp';
-import dubaiImage3 from '../../../assets/img/dubai4.webp';
+import dubaiImage3 from '../../../assets/img/news/new3.jpg';
+import dubaiImage4 from '../../../assets/img/dubai8.webp';
+import dubaiImage5 from '../../../assets/img/news/Poplavsky1.webp';
+import dubaiImage6 from '../../../assets/img/news/P2.jpeg';
+import dubaiImage7 from '../../../assets/img/dubai5.webp';
 
 const noticias = [
   {
@@ -21,35 +25,34 @@ const noticias = [
     "imagen": dubaiImage3,
     "link_noticia": "https://www.perfil.com/noticias/guia-de-profesionales-pnt/poplavsky-group-liderazgo-global-en-servicios-corporativos-y-legales.phtml"
   },
-
-  /*   {
-      "titulo": "Latinos en Dubai: ¿A qué se dedican y cuáles son las oportunidades de inversión?",
-      "descripcion": "Un análisis de las áreas en las que los latinos en Dubai se están destacando y las oportunidades que existen para los inversionistas.",
-      "portada": "https://www.peru-retail.com/imagen.jpg",
-      "imagen": dubaiImage,
-      "link_noticia": "https://www.peru-retail.com/latinos-en-dubai-a-que-se-dedican-y-cuales-son-las-oportunidades-de-inversion/"
-    },
-    {
-      "titulo": "Patricio Poplavsky: El experto en negocios internacionales que facilita la expansión de empresas latinas en Dubai",
-      "descripcion": "Patricio Poplavsky ayuda a empresas latinas a ingresar al competitivo mercado de Dubai mediante estrategias de expansión eficientes.",
-      "portada": "https://www.todoenunclick.com/imagen.jpg",
-      "imagen": dubaiImage,
-      "link_noticia": "https://www.todoenunclick.com/patricio-poplavsky-el-experto-en-negocios-internacionales-que-facilita-la-expansion-de-empresas-latinas-en-dubai/"
-    },
-    {
-      "titulo": "Empresarios argentinos en Dubai: ¿Cuántos hay y cuál es el rubro que genera más oportunidades?",
-      "descripcion": "Un reportaje sobre el impacto de los empresarios argentinos en Dubai y los sectores que presentan mayor potencial de inversión.",
-      "portada": "https://economis.com.ar/imagen.jpg",
-      "imagen": dubaiImage,
-      "link_noticia": "https://economis.com.ar/empresarios-argentinos-en-dubai-cuantos-hay-a-que-se-dedican-y-cual-es-el-rubro-que-genera-mas-oportunidades-de-inversion/"
-    },
-    {
-      "titulo": "Capital de Colombia, Argentina y México invierte en Dubai",
-      "descripcion": "Empresarios de Colombia, Argentina y México están cada vez más interesados en invertir en el mercado de Dubai.",
-      "portada": "https://forbes.com.mx/imagen.jpg",
-      "imagen": dubaiImage,
-      "link_noticia": "https://forbes.com.mx/capital-de-colombia-argentina-y-mexico-invierte-en-dubai/"
-    }, */
+  {
+    "titulo": "Latinos en Dubai: ¿A qué se dedican y cuáles son las oportunidades de inversión?",
+    "descripcion": "Un análisis de las áreas en las que los latinos en Dubai se están destacando y las oportunidades que existen para los inversionistas.",
+    "portada": "https://www.peru-retail.com/imagen.jpg",
+    "imagen": dubaiImage4,
+    "link_noticia": "https://www.peru-retail.com/latinos-en-dubai-a-que-se-dedican-y-cuales-son-las-oportunidades-de-inversion/"
+  },
+  {
+    "titulo": "Patricio Poplavsky: El experto en negocios internacionales que facilita la expansión de empresas latinas en Dubai",
+    "descripcion": "Patricio Poplavsky ayuda a empresas latinas a ingresar al competitivo mercado de Dubai mediante estrategias de expansión eficientes.",
+    "portada": "https://www.todoenunclick.com/imagen.jpg",
+    "imagen": dubaiImage5,
+    "link_noticia": "https://www.todoenunclick.com/patricio-poplavsky-el-experto-en-negocios-internacionales-que-facilita-la-expansion-de-empresas-latinas-en-dubai/"
+  },
+  {
+    "titulo": "Empresarios argentinos en Dubai: ¿Cuántos hay y cuál es el rubro que genera más oportunidades?",
+    "descripcion": "Un reportaje sobre el impacto de los empresarios argentinos en Dubai y los sectores que presentan mayor potencial de inversión.",
+    "portada": "https://economis.com.ar/imagen.jpg",
+    "imagen": dubaiImage6,
+    "link_noticia": "https://economis.com.ar/empresarios-argentinos-en-dubai-cuantos-hay-a-que-se-dedican-y-cual-es-el-rubro-que-genera-mas-oportunidades-de-inversion/"
+  },
+  {
+    "titulo": "Capital de Colombia, Argentina y México invierte en Dubai",
+    "descripcion": "Empresarios de Colombia, Argentina y México están cada vez más interesados en invertir en el mercado de Dubai.",
+    "portada": "https://forbes.com.mx/imagen.jpg",
+    "imagen": dubaiImage7,
+    "link_noticia": "https://forbes.com.mx/capital-de-colombia-argentina-y-mexico-invierte-en-dubai/"
+  },
 ];
 
 export default noticias;
