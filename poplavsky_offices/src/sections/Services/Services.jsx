@@ -4,6 +4,7 @@ import "./Services.css";
 import NavBar from "../../components/NavBar/NavBar";
 import FooterContacto from "../../components/FooterContacto/FooterContacto";
 import FooterEnlaces from "../../components/FooterEnlaces/FooterEnlaces";
+import BannerServices from "../../components/BannerServices/BannerServices";
 
 export default function Services() {
   return (
@@ -12,7 +13,7 @@ export default function Services() {
         <NavBar />
       </nav>
       <section className="col-12">
-        <h1>Services</h1>
+        <BannerServices />
       </section>
       <section className="col-12 mb-3 md:mb-8 bg-blue-dark">
         <FooterContacto />

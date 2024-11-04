@@ -6,6 +6,7 @@ import FooterContacto from "../../components/FooterContacto/FooterContacto";
 import FooterEnlaces from "../../components/FooterEnlaces/FooterEnlaces";
 import InfoAboutUs from "../../components/AboutUs/InfoAboutUs";
 import BloqueFinalAboutUs from "../../components/BloqueFinalAboutUs/InfoFinalAboutUs";
+import BannerSeccion from "../../components/BannerSeccion/BannerSeccion";
 
 export default function AboutUs() {
   return (
@@ -14,7 +15,7 @@ export default function AboutUs() {
         <NavBar />
       </nav>
       <section className="col-12">
-        <h1>AboutUs</h1>
+        <BannerSeccion />
       </section>
       <section>
         <InfoAboutUs />
