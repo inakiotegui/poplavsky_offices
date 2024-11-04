@@ -10,7 +10,7 @@ import BannerAboutUs from "../../components/AboutUs/BannerAboutUs/BannerAboutUs"
 
 export default function AboutUs() {
   return (
-    <div className="AboutUs grid grid-nogutter nested-grid p-3">
+    <div className="AboutUs grid grid-nogutter nested-grid">
       <nav className="col-12 border-round mb-7">
         <NavBar />
       </nav>

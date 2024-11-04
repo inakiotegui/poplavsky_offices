@@ -8,7 +8,7 @@ import BannerServices from "../../components/services/BannerServices/BannerServi
 
 export default function Services() {
   return (
-    <div className="Services grid grid-nogutter nested-grid p-3">
+    <div className="Services grid grid-nogutter nested-grid">
       <nav className="col-12 border-round mb-7">
         <NavBar />
       </nav>
