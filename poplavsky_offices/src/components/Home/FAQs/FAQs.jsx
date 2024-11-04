@@ -118,14 +118,13 @@ export default function FAQs() {
       <Dialog
         header={faq.question}
         visible={visible}
-        style={{ width: "40vw" }}
         onHide={() => {
           setVisible(false);
           setFaq({});
         }}
         contentClassName="bg-blue-dark text-white"
         headerClassName="bg-blue-dark text-white"
-        className="border-1 border-js-yellow"
+        className="border-1 border-js-yellow w-11 md:w-30rem"
         dismissableMask={true}
         modal={true}
         closable={true}
