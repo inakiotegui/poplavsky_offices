@@ -13,7 +13,7 @@ import FooterEnlaces from "../../components/FooterEnlaces/FooterEnlaces";
 export default function Home() {
   return (
     <div className="Home grid grid-nogutter nested-grid p-3 gap-1">
-      <nav className="col-12  border-round">
+      <nav className="col-12 border-round mb-7">
         <NavBar />
       </nav>
       <section className="col-12">
