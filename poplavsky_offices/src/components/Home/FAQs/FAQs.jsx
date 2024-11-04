@@ -39,8 +39,8 @@ export default function FAQs() {
     return (
       <div
         className="card-news grid grid-nogutter nested-grid gap-3 bg-trl-blue border-round m-3 p-3 border-1 border-gray-500 hover:shadow-2 cursor-pointer"
-        style={{ minHeight: "10rem" }}
-        onClick={() => {}}
+        style={{ minHeight: "12rem" }}
+        onClick={() => { }}
       >
         <div className="col-12 border-round flex align-items-center gap-3">
           <span
