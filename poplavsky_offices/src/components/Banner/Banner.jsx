@@ -9,7 +9,7 @@ export default function Banner({ backgroundLogo, backgroundImage, backgroundGrad
             }}>
 
             <div
-                className="BannerMobile md:Banner"
+                className="Banner"
                 style={{
                     backgroundImage: `url(${backgroundImage}), url(${backgroundLogo})`,
                 }}

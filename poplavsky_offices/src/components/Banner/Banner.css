@@ -4,8 +4,10 @@
   background-repeat: no-repeat;
 }
 
-.BannerMobile {
-  background-size: cover, 40%;
-  background-position: left, 100% 95%;
-  background-repeat: no-repeat;
+@media screen and (max-width: 768px) {
+  .Banner {
+    background-size: cover, 40%;
+    background-position: left, 100% 95%;
+    background-repeat: no-repeat;
+  }
 }
