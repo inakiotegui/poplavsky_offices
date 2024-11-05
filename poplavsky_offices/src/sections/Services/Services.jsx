@@ -20,7 +20,7 @@ export default function Services() {
       <section className="col-12 mb-3 md:mb-8">
         <SummaryServices />
       </section>
-      <section className="col-12 flex justify-content-center mt-2 mb-6">
+      <section className="col-12 flex justify-content-center mt-2 mb-4">
         <div className="col-12 md:col-6">
           <InfoBloque
             title="Unlock Your Business Potential in the UAE with Expert, Comprehensive Solutions"
