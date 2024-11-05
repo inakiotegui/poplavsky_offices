@@ -29,8 +29,10 @@ export default function Services() {
           />
         </div>
       </section>
-      <section className="col-12 mt-4">
-        <ListServices />
+      <section className="col-12 flex justify-content-center mt-4">
+        <div className="col-10">
+          <ListServices />
+        </div>
       </section>
       <section className="col-12 bg-blue-dark">
         <FooterContacto />
