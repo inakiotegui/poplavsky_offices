@@ -30,7 +30,7 @@ export default function Services() {
         </div>
       </section>
       <section className="col-12 flex justify-content-center mt-4">
-        <div className="col-10">
+        <div className="col-12 md:col-10">
           <ListServices />
         </div>
       </section>
