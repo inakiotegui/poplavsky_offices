@@ -1,0 +1,15 @@
+.benefits-container {
+  border-top: 1px solid var(--blue-pop-bg-dark);
+}
+
+@media (min-width: 987px) {
+  .benefit {
+    border-left: 1px solid var(--blue-pop-bg-dark);
+  }
+}
+
+@media (max-width: 987px) {
+  .benefits-container {
+    flex-direction: column !important;
+  }
+}
