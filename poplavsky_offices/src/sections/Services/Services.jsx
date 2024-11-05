@@ -5,6 +5,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import FooterContacto from "../../components/FooterContacto/FooterContacto";
 import FooterEnlaces from "../../components/FooterEnlaces/FooterEnlaces";
 import BannerServices from "../../components/services/BannerServices/BannerServices";
+import ListServices from "../../components/services/ListServices/ListServices";
 
 export default function Services() {
   return (
@@ -14,6 +15,9 @@ export default function Services() {
       </nav>
       <section className="col-12">
         <BannerServices />
+      </section>
+      <section className="col-12 mt-4">
+        <ListServices />
       </section>
       <section className="col-12 bg-blue-dark">
         <FooterContacto />
