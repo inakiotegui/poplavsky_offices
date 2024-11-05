@@ -2,10 +2,6 @@
   min-height: 18rem;
 }
 
-.benefits-container {
-  border-top: 1px solid var(--blue-pop-bg-dark);
-}
-
 .solution {
   position: relative;
   background: linear-gradient(
@@ -24,16 +20,4 @@
   width: 3px;
   background-color: var(--yellow-popla);
   border-radius: 2px;
-}
-
-@media (min-width: 987px) {
-  .benefit {
-    border-left: 1px solid var(--blue-pop-bg-dark);
-  }
-}
-
-@media (max-width: 987px) {
-  .benefits-container {
-    flex-direction: column !important;
-  }
 }
