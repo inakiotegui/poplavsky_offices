@@ -62,7 +62,6 @@ export default function FooterEnlaces() {
         </div>
         <div className="flex flex-row justify-content-center align-items-center gap-2 md:gap-3 p-4">
           <i className="cursor-pointer pi pi-facebook pr-1" style={{ fontSize: "1rem" }}></i>
-          <i className="cursor-pointer pi pi-twitter pr-1" style={{ fontSize: "1rem" }}></i>
           <i className="cursor-pointer pi pi-linkedin pr-1" style={{ fontSize: "1rem" }}></i>
         </div>
       </div>
