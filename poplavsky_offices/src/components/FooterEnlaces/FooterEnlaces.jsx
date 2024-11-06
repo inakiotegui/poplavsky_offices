@@ -1,9 +1,21 @@
 import React from "react";
 import "./FooterEnlaces.css";
 import logo from '../../assets/logos/popOffices-logo.png';
+import { useNavigate, useLocation } from "react-router-dom";
 
 
-export default function FooterEnlaces() {
+export default function FooterEnlaces({ onLinkClick, refs }) {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleNavigation = (section) => {
+    if (location.pathname === "/") {
+      onLinkClick(refs[section]);
+    } else {
+      navigate("/", { state: { section } });
+    }
+  };
+
   return (
     <div className="grid grid-nogutter col-12 text-sm justify-content-center mt-4 p-0 text-white">
       <div className="flex flex-column md:flex-row w-10 h-auto md:h-15rem align-items-start text-left m-0 p-0">
@@ -26,9 +38,9 @@ export default function FooterEnlaces() {
             Home
           </p>
           <div className="m-1 text-sm">
-            <p>Hero</p>
-            <p>Prensa</p>
-            <p>FAQ´s</p>
+            <p className="cursor-pointer" onClick={() => handleNavigation("heroRef")}>Hero</p>
+            <p className="cursor-pointer" onClick={() => handleNavigation("prensaRef")}>Prensa</p>
+            <p className="cursor-pointer" onClick={() => handleNavigation("faqsRef")}>FAQ´s</p>
           </div>
         </div>
 

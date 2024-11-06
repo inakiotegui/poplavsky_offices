@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import "./Home.css";
 import NavBar from "../../components/NavBar/NavBar";
 import Portada from "../../components/Home/Portada/Portada";
@@ -11,12 +12,37 @@ import FooterContacto from "../../components/FooterContacto/FooterContacto";
 import FooterEnlaces from "../../components/FooterEnlaces/FooterEnlaces";
 
 export default function Home() {
+  const heroRef = useRef(null);
+  const prensaRef = useRef(null);
+  const faqsRef = useRef(null);
+  const location = useLocation();
+
+  const refs = {
+    heroRef,
+    prensaRef,
+    faqsRef,
+  };
+
+  const scrollToSection = (ref) => {
+    ref.current.scrollIntoView({ behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    // Detectar si tenemos una sección en el estado de la navegación
+    if (location.state?.section) {
+      const sectionRef = refs[location.state.section];
+      if (sectionRef) {
+        scrollToSection(sectionRef);
+      }
+    }
+  }, [location, refs]);
+
   return (
     <div className="Home grid grid-nogutter nested-grid gap-1">
       <nav className="col-12 border-round mb-8">
         <NavBar />
       </nav>
-      <section className="col-12">
+      <section ref={heroRef} className="col-12">
         <Portada />
       </section>
 
@@ -28,17 +54,17 @@ export default function Home() {
         <WhyChooseUs />
       </section>
 
-      <section className="col-12 mb-3 md:mb-8">
+      <section ref={prensaRef} className="col-12 mb-3 md:mb-8">
         <NewsComponent />
       </section>
 
-      <section className="col-12 mb-3 md:mb-8">
+      <section ref={faqsRef} className="col-12 mb-3 md:mb-8">
         <FAQs />
       </section>
 
       <section className="col-12 bg-blue-dark">
         <FooterContacto />
-        <FooterEnlaces />
+        <FooterEnlaces onLinkClick={scrollToSection} refs={refs} />
       </section>
     </div>
   );
