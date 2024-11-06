@@ -17,25 +17,20 @@ export default function Home() {
   const faqsRef = useRef(null);
   const location = useLocation();
 
-  const refs = {
-    heroRef,
-    prensaRef,
-    faqsRef,
-  };
+  const refs = { heroRef, prensaRef, faqsRef };
 
   const scrollToSection = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth" });
+    ref?.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   useEffect(() => {
-    // Detectar si tenemos una sección en el estado de la navegación
     if (location.state?.section) {
       const sectionRef = refs[location.state.section];
       if (sectionRef) {
         scrollToSection(sectionRef);
       }
     }
-  }, [location, refs]);
+  }, [location]);
 
   return (
     <div className="Home grid grid-nogutter nested-grid gap-1">
