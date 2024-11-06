@@ -1,14 +1,23 @@
 import React from "react";
 import "./FooterEnlaces.css";
-import logo from "../../assets/logos/logo-footer.png";
+import logo from '../../assets/logos/popOffices-logo.png';
+
 
 export default function FooterEnlaces() {
   return (
     <div className="grid grid-nogutter col-12 text-sm justify-content-center mt-4 p-0 text-white">
       <div className="flex flex-column md:flex-row w-10 h-auto md:h-15rem align-items-start text-left m-0 p-0">
-        <div className="flex flex-column w-full md:w-3 text-left align-items-start m-2">
-          <div>
-            <img src={logo} alt="icono" className="w-5rem md:w-8rem ml-2" />
+        <div className='flex justify-content-center align-items-center h-6rem w-full md:w-3 fadeinup animation-duration-200 animation-iteration-1 cursor-pointer'>
+          <img src={logo} className='w-4rem md:w-2rem' alt="Pop Offices Logo" />
+          <div className='hidden h-full md:flex flex-column justify-content-center align-items-center'>
+            <p className='m-0 uppercase text-gray-200 white-space-nowrap' style={{ fontSize: '.5rem', letterSpacing: '2px' }}>Poplavsky</p>
+            <p className='m-0 uppercase text-gray-200 white-space-nowrap' style={{ fontSize: '.30rem', letterSpacing: '2px' }}>International Offices</p>
+            <p className='m-0 uppercase text-js-yellow white-space-nowrap' style={{ fontSize: '.25rem', letterSpacing: '2px' }}>DUBAI - UAE</p>
+          </div>
+          <div className='flex h-full md:hidden flex-column justify-content-center align-items-center'>
+            <p className='m-0 uppercase text-gray-200 white-space-nowrap' style={{ fontSize: '.8rem', letterSpacing: '2px' }}>Poplavsky</p>
+            <p className='m-0 uppercase text-gray-200 white-space-nowrap' style={{ fontSize: '.50rem', letterSpacing: '2px' }}>International Offices</p>
+            <p className='m-0 uppercase text-js-yellow white-space-nowrap' style={{ fontSize: '.45rem', letterSpacing: '2px' }}>DUBAI - UAE</p>
           </div>
         </div>
 
