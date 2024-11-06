@@ -1,10 +1,16 @@
 
 import React from 'react';
 import './SummaryServicesCards.css';
+import { useNavigate } from "react-router-dom";
 
 export default function SummaryServicesCards({ service }) {
+  const navigate = useNavigate();
+  const handleNavigation = (section, path) => {
+    navigate(path, { state: { section } });
+  };
+
   return (
-    <div className='SummaryServicesCards col-12 md:col grid grid-nogutter nested-grid bg-trl-blue border-round gap-3 p-3 border-gray-500 hover:border-js-yellow border-1 relative cursor-pointer'>
+    <div onClick={() => handleNavigation(service.numero, service.path)} className='SummaryServicesCards col-12 md:col grid grid-nogutter nested-grid bg-trl-blue border-round gap-3 p-3 border-gray-500 hover:border-js-yellow border-1 relative cursor-pointer'>
       <i className='pi pi-arrow-up-right absolute text-xl text-gray-500' style={{ right: '10px', top: '10px' }}></i>
 
       <div className='col-12 flex justify-content-center align-items-center'
