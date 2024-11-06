@@ -1,15 +1,37 @@
 import React from "react";
 import "./FooterEnlaces.css";
 import logo from "../../assets/logos/popOffices-logo.png";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-export default function FooterEnlaces({ onLinkClick, refs }) {
+import footerLinks from "../../utils/jsons/Footer/FooterEnlaces";
+
+// Reusable component for each section
+const FooterSection = ({ title, links, sectionName }) => {
   const navigate = useNavigate();
 
   const handleNavigation = (section, path) => {
     navigate(path, { state: { section } });
   };
 
+  return (
+    <div className="flex flex-column w-full md:w-3 align-items-start m-2">
+      <p className="urbanist-medium m-1 mb-2 text-base text-gray-400">{title}</p>
+      <div className="m-1 text-sm">
+        {links.map((link) => (
+          <p
+            key={link.text}
+            className="m-1 mb-2 text-white cursor-pointer"
+            onClick={() => handleNavigation(link.section, link.path)}
+          >
+            {link.text}
+          </p>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+export default function FooterEnlaces() {
   return (
     <div className="grid grid-nogutter col-12 text-sm justify-content-center mt-4 p-0 text-white">
       <div className="flex flex-column md:flex-row w-10 h-auto md:h-15rem align-items-start text-left m-0 p-0">
@@ -27,72 +49,21 @@ export default function FooterEnlaces({ onLinkClick, refs }) {
           </div>
         </div>
 
-        <div className="flex flex-column w-full md:w-3 align-items-start m-2">
-          <p className="urbanist-medium m-1 mb-2 text-base text-gray-400">Home</p>
-          <div className="m-1 text-sm">
-            <p className="m-1 mb-2 cursor-pointer" onClick={() => handleNavigation("heroRef", "/")}>Hero</p>
-            <p className="m-1 mb-2 cursor-pointer" onClick={() => handleNavigation("prensaRef", "/")}>Prensa</p>
-            <p className="m-1 mb-2 cursor-pointer" onClick={() => handleNavigation("faqsRef", "/")}>FAQ´s</p>
-          </div>
-        </div>
-
-        <div className="flex flex-column w-full md:w-3 align-items-start m-2">
-          <p className="urbanist-medium m-1 mb-2 text-base text-gray-400">About Us</p>
-          <div className="m-1 text-sm">
-            <p className="m-1 mb-2 text-white cursor-pointer" onClick={() => handleNavigation("bannerRef", "/about-us")}>Home</p>
-            <p className="m-1 mb-2 text-white cursor-pointer" onClick={() => handleNavigation("infoRef", "/about-us")}>Who We Are</p>
-            <p className="m-1 mb-2 text-white cursor-pointer" onClick={() => handleNavigation("finalRef", "/about-us")}>More Information</p>
-            <p className="m-1 mb-2 text-white cursor-pointer" onClick={() => handleNavigation("teamRef", "/about-us")}>Our Team</p>
-          </div>
-        </div>
-
-        <div className="flex flex-column w-full md:w-3 align-items-start m-2">
-          <p className="urbanist-medium m-1 mb-2 text-base text-gray-400">Services</p>
-          <div className="m-1 text-sm">
-            <p className="m-1 mb-2 text-white cursor-pointer" onClick={() => handleNavigation("banner", "/services")}>Banner</p>
-            <p className="m-1 mb-2 text-white cursor-pointer" onClick={() => handleNavigation("serviceOverview", "/services")}>Services Overview</p>
-            <p className="m-1 mb-2 text-white cursor-pointer" onClick={() => handleNavigation("detailDescription", "/services")}>Detail Description</p>
-            <p className="m-1 mb-2 text-white cursor-pointer" onClick={() => handleNavigation("listOfServices", "/services")}>List Of Services</p>
-          </div>
-        </div>
-
-        <div className="flex flex-column w-full md:w-3 justify-content-start items-center m-2">
-          <p className="urbanist-medium m-1 mb-2 text-base text-gray-400">
-            Contact Us
-          </p>
-          <div className="m-1 text-sm">
-            <p>Contact Form</p>
-            <p>Our Offices</p>
-          </div>
-        </div>
+        {/* Rendering Footer Sections */}
+        {footerLinks.map((section, index) => (
+          <FooterSection key={index} title={section.title} links={section.links} />
+        ))}
       </div>
 
       <div className="flex flex-row justify-content-around border-round w-full p-0 bg-black-alpha-60">
         <div className="flex flex-column md:flex-row justify-content-center align-content-start md:align-items-center gap-2 md:gap-3 p-4">
-          <p className="text-lefttext-sm m-0">
-            ©2024 Poplavsky. Todos los derechos reservados.
-          </p>
-          <p className="text-lefttext-sm m-0">Términos y condiciones</p>
+          <p className="text-left text-sm m-0">©2024 Poplavsky. All rights reserved.</p>
+          <p className="text-left text-sm m-0">Terms and Conditions</p>
         </div>
         <div className="flex flex-row justify-content-center align-items-center gap-2 md:gap-3 p-4">
-          <div>
-            <i
-              className="cursor-pointer pi pi-facebook pr-1"
-              style={{ fontSize: "1rem" }}
-            ></i>
-          </div>
-          <div>
-            <i
-              className="cursor-pointer pi pi-twitter pr-1"
-              style={{ fontSize: "1rem" }}
-            ></i>
-          </div>
-          <div>
-            <i
-              className="cursor-pointer pi pi-linkedin pr-1"
-              style={{ fontSize: "1rem" }}
-            ></i>
-          </div>
+          <i className="cursor-pointer pi pi-facebook pr-1" style={{ fontSize: "1rem" }}></i>
+          <i className="cursor-pointer pi pi-twitter pr-1" style={{ fontSize: "1rem" }}></i>
+          <i className="cursor-pointer pi pi-linkedin pr-1" style={{ fontSize: "1rem" }}></i>
         </div>
       </div>
     </div>
