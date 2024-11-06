@@ -7,6 +7,7 @@ import FooterEnlaces from "../../components/FooterEnlaces/FooterEnlaces";
 import InfoAboutUs from "../../components/AboutUs/InfoAboutUs";
 import BloqueFinalAboutUs from "../../components/BloqueFinalAboutUs/InfoFinalAboutUs";
 import BannerAboutUs from "../../components/AboutUs/BannerAboutUs/BannerAboutUs";
+import OurTeam from "../../components/AboutUs/OurTeam/OurTeam";
 
 export default function AboutUs() {
   return (
@@ -17,9 +18,13 @@ export default function AboutUs() {
       <section className="col-12">
         <BannerAboutUs />
       </section>
-      <section>
+      <section className="col-12">
         <InfoAboutUs />
         <BloqueFinalAboutUs />
+      </section>
+
+      <section>
+        <OurTeam />
       </section>
       <section className="col-12 bg-blue-dark">
         <FooterContacto />

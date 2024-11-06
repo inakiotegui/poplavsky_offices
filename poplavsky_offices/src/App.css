@@ -86,6 +86,10 @@
   background-color: var(--blue-pop-bg-blue) !important;
 }
 
+.border-blue {
+  border: var(--blue-pop-bg-dark);
+}
+
 /* ==========================
    Colores Dorados (Gold Colors)
    ========================== */
