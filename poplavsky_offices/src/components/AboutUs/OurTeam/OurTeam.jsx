@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import './OurTeam.css';
 import CustomDivider from '../../../utils/Divider/CustomDivider/CustomDivider';
@@ -15,10 +14,24 @@ export default function OurTeam() {
     window.open(link, "_blank");
   };
 
+  // Función para dividir la descripción y aplicar una clase a las primeras dos palabras
+  const formatDescription = (description) => {
+    const words = description.split(' ');
+    const firstTwoWords = words.slice(0, 2).join(' ');  // Primeras dos palabras
+    const remainingWords = words.slice(2).join(' ');  // El resto de las palabras
+
+    return (
+      <span>
+        <span className="text-pop-gold text-2xl">{firstTwoWords}</span> {remainingWords}
+      </span>
+    );
+  };
+
   const contentCard = (member) => {
     return (
       <div
-        className={`card-team md:w-12rem h-16rem border-round grid grid-nogutter justify-content-center align-content-center p-2 border-1 cursor-pointer ${(memberSelected !== null && memberSelected === member) ? 'card-team-selected' : ''}`}>
+        className={`card-team md:w-12rem h-16rem border-round grid grid-nogutter justify-content-center align-content-center p-2 border-1 cursor-pointer ${(memberSelected !== null && memberSelected === member) ? 'card-team-selected' : ''}`}
+      >
         <div className='col-12 h-10rem relative'
           style={{
             backgroundImage: `url(${member.photo})`,
@@ -47,7 +60,7 @@ export default function OurTeam() {
         </div>
       </div>
     )
-  }
+  };
 
   return (
     <div className="OurTeam grid grid-nogutter nested-grid  border-round gap-3 p-3 relative fadein animation-duration-1000 animation-iteration-1 animation-ease-in-out">
@@ -61,7 +74,6 @@ export default function OurTeam() {
         </div>
       </div>
 
-
       <div className='col-12 grid grid-nogutter nested-grid justify-content-center align-content-center '>
         <div className='col-12 md:col-10 mb-3 grid grid-nogutter nested-grid justify-content-center align-items-center md:gap-3 border-round'
           style={{ height: 'fit-content' }}
@@ -70,26 +82,26 @@ export default function OurTeam() {
             <div className='custom-responsive-container col-6 md:col-fixed'>
               <div
                 className='hidden md:block'
-                onClick={() => setMember(member)}>
+                onClick={() => setMember(member)}
+              >
                 {contentCard(member)}
               </div>
               <div
                 className='block md:hidden'
-                onClick={() => { setVisible(true); setMember(member) }}>
+                onClick={() => { setVisible(true); setMember(member) }}
+              >
                 {contentCard(member)}
               </div>
             </div>
           ))}
         </div>
 
-
         <div className='hidden md:flex col-10 bg-blue-dark border-round  justify-content-center align-items-center p-3' style={{ minHeight: '10rem' }}>
           <p className='m-0 w-full text-center text-white'>
-            {memberSelected ? memberSelected.description : 'Select a team member to view their profile'}
+            {memberSelected ? formatDescription(memberSelected.description) : 'Select a team member to view their profile'}
           </p>
         </div>
       </div>
-
 
       <Dialog
         header={memberSelected ? memberSelected.fullName : ''}
@@ -102,8 +114,10 @@ export default function OurTeam() {
         closable={true}
         onHide={() => { setVisible(false); setMember(null) }}
       >
-        <p className="m-0 text-xs font-light">{memberSelected ? memberSelected.description : ''}</p>
+        <p className="m-0 text-xs font-light">
+          {memberSelected ? formatDescription(memberSelected.description) : ''}
+        </p>
       </Dialog>
     </div >
   );
-};
+}

@@ -24,7 +24,6 @@ export default function Services() {
   };
 
   useEffect(() => {
-    console.log("DALE", location);
     if (location.state?.section) {
       const sectionRef = refs[location.state.section];
       if (sectionRef) {
