@@ -13,11 +13,12 @@ import FooterEnlaces from "../../components/FooterEnlaces/FooterEnlaces";
 
 export default function Home() {
   const heroRef = useRef(null);
+  const whyUs = useRef(null);
   const prensaRef = useRef(null);
   const faqsRef = useRef(null);
   const location = useLocation();
 
-  const refs = { heroRef, prensaRef, faqsRef };
+  const refs = { heroRef, whyUs, prensaRef, faqsRef };
 
   const scrollToSection = (ref) => {
     ref?.current?.scrollIntoView({ behavior: "smooth" });
@@ -45,7 +46,7 @@ export default function Home() {
         <SummaryServices />
       </section>
 
-      <section className="col-12 mb-3 md:mb-8">
+      <section ref={whyUs} className="col-12 mb-3 md:mb-8">
         <WhyChooseUs />
       </section>
 
@@ -59,7 +60,7 @@ export default function Home() {
 
       <section className="col-12 bg-blue-dark">
         <FooterContacto />
-        <FooterEnlaces onLinkClick={scrollToSection} refs={refs} />
+        <FooterEnlaces />
       </section>
     </div>
   );

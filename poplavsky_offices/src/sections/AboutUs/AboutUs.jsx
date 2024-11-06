@@ -52,7 +52,7 @@ export default function AboutUs() {
       </section>
       <section className="col-12 bg-blue-dark">
         <FooterContacto />
-        <FooterEnlaces onLinkClick={scrollToSection} refs={{ bannerRef, infoRef, finalRef, teamRef }} />
+        <FooterEnlaces />
       </section>
     </div>
   );
