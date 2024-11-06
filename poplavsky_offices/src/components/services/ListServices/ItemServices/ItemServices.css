@@ -1,0 +1,3 @@
+.list-disc li::marker {
+  font-size: 0.7em;
+}
