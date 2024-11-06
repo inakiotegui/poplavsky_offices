@@ -14,11 +14,10 @@ export default function OurTeam() {
     window.open(link, "_blank");
   };
 
-  // Función para dividir la descripción y aplicar una clase a las primeras dos palabras
   const formatDescription = (description) => {
     const words = description.split(' ');
-    const firstTwoWords = words.slice(0, 2).join(' ');  // Primeras dos palabras
-    const remainingWords = words.slice(2).join(' ');  // El resto de las palabras
+    const firstTwoWords = words.slice(0, 2).join(' ');
+    const remainingWords = words.slice(2).join(' ');
 
     return (
       <span>
