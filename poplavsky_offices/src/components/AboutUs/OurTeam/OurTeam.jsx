@@ -18,7 +18,7 @@ export default function OurTeam() {
   const contentCard = (member) => {
     return (
       <div
-        className={`col-12 card-team md:w-12rem h-16rem border-round grid grid-nogutter justify-content-center align-content-center p-2 border-1 cursor-pointer ${(memberSelected !== null && memberSelected === member) ? 'card-team-selected' : ''}`}>
+        className={`card-team md:w-12rem h-16rem border-round grid grid-nogutter justify-content-center align-content-center p-2 border-1 cursor-pointer ${(memberSelected !== null && memberSelected === member) ? 'card-team-selected' : ''}`}>
         <div className='col-12 h-10rem relative'
           style={{
             backgroundImage: `url(${member.photo})`,
@@ -67,7 +67,7 @@ export default function OurTeam() {
           style={{ height: 'fit-content' }}
         >
           {teamMembers.map((member, index) => (
-            <div className='col-6 md:col-fixed'>
+            <div className='custom-responsive-container col-6 md:col-fixed'>
               <div
                 className='hidden md:block'
                 onClick={() => setMember(member)}>
