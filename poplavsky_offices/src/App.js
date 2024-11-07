@@ -12,8 +12,18 @@ import Home from './sections/Home/Home';
 import AboutUs from './sections/AboutUs/AboutUs';
 import Services from './sections/Services/Services';
 
+import wsp from "./assets/icons/general/wsp.png"
 
 function App() {
+  window.addEventListener("scroll", function () {
+    const whatsappButton = document.querySelector(".whatsapp-button");
+    if (window.scrollY > 100) {
+      whatsappButton.classList.add("show");
+    } else {
+      whatsappButton.classList.remove("show");
+    }
+  });
+
   return (
     <div className="App">
       <Routes>
@@ -21,7 +31,15 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/services" element={<Services />} />
       </Routes>
-    </div>
+      <a
+        href="https://wa.me/971585661300"
+        class="whatsapp-button"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={wsp} alt="WhatsApp" />
+      </a>
+    </div >
   );
 }
 

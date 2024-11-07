@@ -149,3 +149,34 @@
 .bg-trl-black {
   background-color: #141414 !important;
 }
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 10px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  z-index: 1000;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Estilos para mostrar el botón cuando se ha hecho scroll */
+.whatsapp-button.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animación suave al hacer hover */
+.whatsapp-button:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Estilo de la imagen */
+.whatsapp-button img {
+  width: 5rem;
+  height: auto;
+  border-radius: 50%;
+}

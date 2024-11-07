@@ -20,7 +20,7 @@ export default function Map() {
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="Map showing location at Opus Tower, Of 1101, Business Bay. Dubai, UAE"
+            title="Map showing location at Opus Tower, C101, Business Bay. Dubai, UAE"
           ></iframe>
         </div>
       </div>
