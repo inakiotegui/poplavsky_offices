@@ -1,7 +1,16 @@
+import recurso1 from "../../../assets/img/servicios/recurso1.jpg";
+import recurso2 from "../../../assets/img/servicios/recurso2.jpg";
+import recurso3 from "../../../assets/img/servicios/recurso3.jpg";
+import recurso4 from "../../../assets/img/servicios/recurso4.jpg";
+import recurso5 from "../../../assets/img/servicios/recurso5.jpg";
+import recurso6 from "../../../assets/img/servicios/recurso6.jpg";
+import recurso7 from "../../../assets/img/servicios/recurso7.jpg";
+
 const servicesInfo = [
   {
     numero: "01",
     titulo: "Company Formation",
+    img: recurso1,
     descripcion: "Customized Solutions for Business Success in the UAE.",
     points: [
       "Detailed assessment of your business model and growth plans",
@@ -14,6 +23,7 @@ const servicesInfo = [
   {
     numero: "02",
     titulo: "UAE Residency",
+    img: recurso2,
     descripcion: "Comprehensive Residence Visa Management.",
     points: [
       "Full guidance for obtaining residence visas in the UAE, including employee, investor, and Golden Visas",
@@ -25,6 +35,7 @@ const servicesInfo = [
   {
     numero: "03",
     titulo: "Corporate Bank Account Assistance",
+    img: recurso3,
     descripcion: "Simplified Corporate Bank Account Setup.",
     points: [
       "Guidance through every step of the account-opening process in the UAE",
@@ -36,6 +47,7 @@ const servicesInfo = [
   {
     numero: "04",
     titulo: "Market Research",
+    img: recurso4,
     descripcion: "Maximize Opportunities with Expert Market Research.",
     points: [
       "In-depth analysis of the UAE market to inform strategic decisions",
@@ -48,6 +60,7 @@ const servicesInfo = [
   {
     numero: "05",
     titulo: "Commercial Representation",
+    img: recurso5,
     descripcion: "Gain Buyers and Grow with Commercial Representation in the UAE.",
     points: [
       "Connect with key distributors and partners to sell your products in the UAE",
@@ -59,6 +72,7 @@ const servicesInfo = [
   {
     numero: "06",
     titulo: "Debt Collection Services",
+    img: recurso6,
     descripcion: "Recover Payments with Professional Debt Collection.",
     points: [
       "Efficient recovery of outstanding payments to protect cash flow",
@@ -70,6 +84,7 @@ const servicesInfo = [
   {
     numero: "07",
     titulo: "Tax Consultancy",
+    img: recurso7,
     descripcion: "Tax Consulting for Compliance and Optimization.",
     points: [
       "Specialized advice on tax compliance for businesses in the UAE",

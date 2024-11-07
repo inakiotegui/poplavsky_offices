@@ -13,6 +13,7 @@ export default function ListServices() {
           descripcion={item.descripcion}
           points={item.points}
           index={index}
+          img={item.img}
         />
       ))}
     </div>
