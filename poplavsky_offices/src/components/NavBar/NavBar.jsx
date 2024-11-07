@@ -56,10 +56,10 @@ export default function NavBar() {
       </div>
       <div className='col-2 md:col-3 border-round flex justify-content-center align-items-center'>
         <span className='hidden md:block'>
-          <Button label="Contact Us" size='small' onClick={() => navigateAndScroll('/')} className='hover:shadow-6 fadeinup animation-duration-1000 animation-iteration-1 py-3 px-4' />
+          <Button label="Contact Us" size='small' onClick={() => navigateAndScroll('/contact-us')} className='hover:shadow-6 fadeinup animation-duration-1000 animation-iteration-1 py-3 px-4' />
         </span>
         <span className='block md:hidden'>
-          <Button icon="pi pi-envelope" size='small' onClick={() => navigateAndScroll('/')} className='hover:shadow-6 fadeinup animation-duration-1000 animation-iteration-1 w-3rem h-2rem p-0' />
+          <Button icon="pi pi-envelope" size='small' onClick={() => navigateAndScroll('/contact-us')} className='hover:shadow-6 fadeinup animation-duration-1000 animation-iteration-1 w-3rem h-2rem p-0' />
         </span>
       </div>
     </div>

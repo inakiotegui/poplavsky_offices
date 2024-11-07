@@ -11,6 +11,7 @@ import "primeflex/primeflex.css";
 import Home from './sections/Home/Home';
 import AboutUs from './sections/AboutUs/AboutUs';
 import Services from './sections/Services/Services';
+import ContactUs from './sections/ContactUs/ContactUs';
 
 import wsp from "./assets/icons/general/wsp.png"
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
       <a
         href="https://wa.me/971585661300"
