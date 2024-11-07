@@ -1,10 +1,10 @@
-import recurso1 from "../../../assets/img/servicios/recurso1.jpg";
-import recurso2 from "../../../assets/img/servicios/recurso2.jpg";
-import recurso3 from "../../../assets/img/servicios/recurso3.jpg";
-import recurso4 from "../../../assets/img/servicios/recurso4.jpg";
-import recurso5 from "../../../assets/img/servicios/recurso5.jpg";
-import recurso6 from "../../../assets/img/servicios/recurso6.jpg";
-import recurso7 from "../../../assets/img/servicios/recurso7.jpg";
+import recurso1 from "../../../assets/img/servicios/recurso1.webp";
+import recurso2 from "../../../assets/img/servicios/recurso2.webp";
+import recurso3 from "../../../assets/img/servicios/recurso3.webp";
+import recurso4 from "../../../assets/img/servicios/recurso4.webp";
+import recurso5 from "../../../assets/img/servicios/recurso5.webp";
+import recurso6 from "../../../assets/img/servicios/recurso6.webp";
+import recurso7 from "../../../assets/img/servicios/recurso7.webp";
 
 const servicesInfo = [
   {
@@ -61,7 +61,8 @@ const servicesInfo = [
     numero: "05",
     titulo: "Commercial Representation",
     img: recurso5,
-    descripcion: "Gain Buyers and Grow with Commercial Representation in the UAE.",
+    descripcion:
+      "Gain Buyers and Grow with Commercial Representation in the UAE.",
     points: [
       "Connect with key distributors and partners to sell your products in the UAE",
       "Extensive expertise in the UAE's dynamic market and business landscape",

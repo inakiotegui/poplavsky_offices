@@ -43,7 +43,6 @@ export default function AboutUs() {
       </section>
       <section ref={infoRef} className="col-12">
         <InfoAboutUs />
-        <BloqueFinalAboutUs />
       </section>
       <section ref={finalRef}>
         <BloqueFinalAboutUs />
