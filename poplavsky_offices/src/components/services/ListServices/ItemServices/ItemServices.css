@@ -1,3 +1,12 @@
 .list-disc li::marker {
   font-size: 0.7em;
 }
+.custom-bg-img-service {
+  background-color: var(--blue-pop-bg-dark-80-translucent) !important;
+}
+
+@media screen and (min-width: 768px) {
+  .custom-bg-img-service {
+    background-color: var(--blue-pop-bg-dark-translucent) !important;
+  }
+}

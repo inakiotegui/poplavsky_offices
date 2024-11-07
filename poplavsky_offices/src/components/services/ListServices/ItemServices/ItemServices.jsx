@@ -47,7 +47,7 @@ export default function ItemServices({
         >
           <p
             ref={pRef}
-            className={`urbanist-bold text-6xl md:text-8xl text-js-yellow m-0 flex justify-content-center align-items-center m-0 bg-trl-blue px-3 border-1 border-pop-gold ${!isEven ? "md:border-round-right" : "md:border-round-left"}`}
+            className={`custom-bg-img-service urbanist-bold text-6xl md:text-8xl text-js-yellow m-0 flex justify-content-center align-items-center m-0 px-3 border-1 border-pop-gold ${!isEven ? "md:border-round-right" : "md:border-round-left"}`}
           >
             {numero}
           </p>
