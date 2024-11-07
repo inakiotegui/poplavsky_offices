@@ -7,6 +7,7 @@
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
+    "emailjs-com": "^3.2.0",
     "hygen": "^6.2.11",
     "primeflex": "^3.3.1",
     "primeicons": "^7.0.0",
@@ -21,7 +22,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "rm-container-cl":"node src/removeClasses.js",
+    "rm-container-cl": "node src/removeClasses.js",
     "eject": "react-scripts eject",
     "generate": "hygen component new"
   },
