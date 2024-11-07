@@ -1,10 +1,16 @@
 import React from "react";
 import "./FooterContacto.css";
+import { useNavigate } from "react-router-dom";
 
 import { Button } from "primereact/button";
 import fondo from "../../assets/fondos/fondo3.webp";
 
 export default function FooterContacto() {
+  const navigate = useNavigate();
+
+  const handleNavigateContacto = () => {
+    navigate("/contact-us");
+  }
   return (
     <div className="FooterContacto grid grid-nogutter nested-grid flex-column md:flex-row p-3 m-2 gap-3 justify-content-center md:h-15rem bg-blue">
       <img
@@ -30,6 +36,7 @@ export default function FooterContacto() {
           label="Contact Us"
           size="small"
           className="shadow-2 py-2 md:py-3 px-2 md:px-4"
+          onClick={() => handleNavigateContacto()}
         />
       </div>
     </div>
