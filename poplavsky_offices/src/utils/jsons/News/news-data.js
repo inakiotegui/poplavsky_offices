@@ -1,5 +1,5 @@
-import dubaiImage1 from '../../../assets/img/dubai8.webp';
-import dubaiImage2 from '../../../assets/img/dubai2.webp';
+import dubaiImage1 from '../../../assets/img/news/uno.jpeg';
+import dubaiImage2 from '../../../assets/img/news/dos.jpeg';
 import dubaiImage3 from '../../../assets/img/news/new3.jpg';
 import dubaiImage4 from '../../../assets/img/dubai8.webp';
 import dubaiImage5 from '../../../assets/img/news/Poplavsky1.webp';

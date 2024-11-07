@@ -13,6 +13,11 @@ export default function NewsComponent() {
   const responsiveOptions = [
     {
       breakpoint: "1400px",
+      numVisible: 4,
+      numScroll: 1,
+    },
+    {
+      breakpoint: "1300px",
       numVisible: 3,
       numScroll: 1,
     },
@@ -57,7 +62,8 @@ export default function NewsComponent() {
             style={{
               backgroundImage: `url(${item.imagen})`,
               backgroundSize: "cover",
-              backgroundPosition: "center",
+              backgroundPosition: "top",
+              backgroundRepeat: "no-repeat",
             }}
           ></div>
 
