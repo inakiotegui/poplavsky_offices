@@ -3,7 +3,7 @@ const footerLinks = [
         title: "Home",
         links: [
             { text: "Hero", section: "heroRef", path: "/" },
-            { text: "Prensa", section: "prensaRef", path: "/" },
+            { text: "News", section: "prensaRef", path: "/" },
             { text: "FAQ´s", section: "faqsRef", path: "/" },
         ],
     },
