@@ -13,8 +13,9 @@ export default function CardInfoAboutUs({
   return (
     <div className="grid grid-nogutter col-12 justify-content-center align-items-center mt-4 mb-4 p-0 text-white">
       <div
-        className={`flex flex-column w-full justify-content-center align-items-center gap-8 mb-4 mt-4 ${!isEven ? "md:flex-row" : "md:flex-row-reverse"
-          }`}
+        className={`flex flex-column w-full justify-content-center align-items-center gap-8 mb-4 mt-4 ${
+          !isEven ? "md:flex-row" : "md:flex-row-reverse"
+        }`}
       >
         <div className="w-full md:w-5 md:text-left md:pl-5">
           <h1 className="text-2xl md:text-4xl m-0">{titulo}</h1>
@@ -22,7 +23,7 @@ export default function CardInfoAboutUs({
           <p className="text-sm md:text-base">{texto2}</p>
         </div>
 
-        <div className="flex flex-column justify-content-center align-items-center w-full h-15rem md:h-25rem md:w-5 border-round image-container container-shadow-js-os fadein animation-duration-1000 animation-iteration-1">
+        <div className="flex flex-column justify-content-center align-items-center w-full h-15rem md:h-25rem md:w-5 border-round image-container container-shadow-js-os">
           <img
             src={imagen}
             alt={titulo}
