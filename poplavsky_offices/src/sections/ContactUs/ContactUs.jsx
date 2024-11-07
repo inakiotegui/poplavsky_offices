@@ -36,8 +36,11 @@ export default function ContactUs() {
     // Aquí podrías manejar el envío de datos (ej: enviar a un servidor)
   };
 
-  // Verificar si todos los campos tienen valores y el email es válido
   const isFormComplete = formData.fullName && formData.email && formData.message && isEmailValid;
+
+  const handleToInsta = () => {
+    window.open('https://www.instagram.com/popladubai/', '_blank');
+  }
 
   return (
     <div className="ContactUs grid grid-nogutter nested-grid justify-content-center align-content-center gap-1"
@@ -47,60 +50,76 @@ export default function ContactUs() {
         <NavBar />
       </nav>
 
-      <section className="col-11 md:col-6 border-round bg-trl-blue border-1 border-js-yellow">
-        <div className="w-full px-4 md:px-6 grid grid-nogutter nested-grid justify-content-start align-items-center  border-round">
-          <div>
-            <CustomDivider />
-            <h2 className="text-white text-2xl md:text-4xl m-2">Contact Us</h2>
+      <div className='col-10 grid grid-nogutter nested-grid gap-3'>
+
+
+        <section className="col-12 md:col-5 flex align-items-center">
+          <div className="w-full px-4 md:px-6 grid grid-nogutter nested-grid justify-content-start align-items-center border-round">
+            <p className='w-full flex gap-3 align-items-center text-white'><i className='text-js-yellow pi pi-map-marker'></i>Opus Tower, C101, Business Bay. Dubai, UAE</p>
+            <p className='w-full flex gap-3 align-items-center text-white'><i className='text-js-yellow pi pi-phone'></i>+971 585661300</p>
+            <p className='w-full flex gap-3 align-items-center text-white'><i className='text-js-yellow pi pi-envelope'></i>patricio@poplavskydubaioffices.com</p>
+            <p className='w-full flex gap-3 align-items-center text-white cursor-pointer' onClick={() => handleToInsta()}><i className='text-js-yellow pi pi-instagram'></i>Follow us @poplavsky</p>
           </div>
-        </div>
-        <form onSubmit={handleSubmit} className="contact-form py-4 flex flex-column align-content-center">
-          <div className="field px-4">
-            <label className='text-white' htmlFor="fullName">Full Name</label>
-            <InputText
-              id="fullName"
-              name="fullName"
-              value={formData.fullName}
-              onChange={handleChange}
-              placeholder="Enter your full name"
-              className="w-full"
-            />
+        </section>
+
+
+        <section className="col-12 md:col border-round bg-trl-blue border-1 border-js-yellow">
+          <div className="w-full px-4 md:px-6 grid grid-nogutter nested-grid justify-content-start align-items-center  border-round">
+            <div>
+              <CustomDivider />
+              <h2 className="text-white text-2xl md:text-4xl m-2">Contact Us</h2>
+            </div>
           </div>
-          <div className="field px-4">
-            <label className='text-white' htmlFor="email">Email</label>
-            <InputText
-              id="email"
-              name="email"
-              type="email"
-              value={formData.email}
-              onChange={handleChange}
-              placeholder="Enter your email"
-              className="w-full"
-            />
-            {!isEmailValid && <small className="p-error">Please enter a valid email address.</small>}
-          </div>
-          <div className="field px-4">
-            <label className='text-white' htmlFor="message">Message</label>
-            <InputTextarea
-              id="message"
-              name="message"
-              value={formData.message}
-              onChange={handleChange}
-              placeholder="Write your message"
-              rows={5}
-              className="w-full"
-            />
-          </div>
-          <div className='px-4'>
-            <Button
-              type="submit"
-              label="Send Message"
-              className="mt-4 w-full"
-              disabled={!isFormComplete}
-            />
-          </div>
-        </form>
-      </section>
+          <form onSubmit={handleSubmit} className="contact-form py-4 flex flex-column align-content-center">
+            <div className="field px-4">
+              <label className='text-white' htmlFor="fullName">Full Name</label>
+              <InputText
+                id="fullName"
+                name="fullName"
+                value={formData.fullName}
+                onChange={handleChange}
+                placeholder="Enter your full name"
+                className="w-full"
+              />
+            </div>
+            <div className="field px-4">
+              <label className='text-white' htmlFor="email">Email</label>
+              <InputText
+                id="email"
+                name="email"
+                type="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Enter your email"
+                className="w-full"
+              />
+              {!isEmailValid && <small className="p-error">Please enter a valid email address.</small>}
+            </div>
+            <div className="field px-4">
+              <label className='text-white' htmlFor="message">Message</label>
+              <InputTextarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Write your message"
+                rows={5}
+                className="w-full"
+              />
+            </div>
+            <div className='px-4'>
+              <Button
+                type="submit"
+                label="Send Message"
+                className="mt-4 w-full"
+                disabled={!isFormComplete}
+              />
+            </div>
+          </form>
+        </section>
+
+      </div>
+
     </div>
   );
 }
