@@ -13,6 +13,7 @@ const FooterSection = ({ title, links, sectionName }) => {
     navigate(path, { state: { section } });
   };
 
+
   return (
     <div className="flex flex-column w-full md:w-3 align-items-start m-2">
       <p className="urbanist-medium m-1 mb-2 text-base text-gray-400">{title}</p>
@@ -32,6 +33,10 @@ const FooterSection = ({ title, links, sectionName }) => {
 };
 
 export default function FooterEnlaces() {
+  const navigateTo = (path) => {
+    window.open(path, "_blank");
+  };
+
   return (
     <div className="grid grid-nogutter col-12 text-sm justify-content-center mt-4 p-0 text-white">
       <div className="flex flex-column md:flex-row w-10 h-auto md:h-15rem align-items-start text-left m-0 p-0">
@@ -61,8 +66,8 @@ export default function FooterEnlaces() {
           <p className="text-left text-sm m-0">Terms and Conditions</p>
         </div>
         <div className="flex flex-row justify-content-center align-items-center gap-2 md:gap-3 p-4">
-          <i className="cursor-pointer pi pi-facebook pr-1" style={{ fontSize: "1rem" }}></i>
-          <i className="cursor-pointer pi pi-linkedin pr-1" style={{ fontSize: "1rem" }}></i>
+          <i className="cursor-pointer pi pi-instagram pr-1" onClick={() => navigateTo('https://www.instagram.com/popladubai/')} style={{ fontSize: "1rem" }}></i>
+          <i className="cursor-pointer pi pi-linkedin pr-1" onClick={() => navigateTo('https://www.linkedin.com/company/poplavskydubai/')} style={{ fontSize: "1rem" }}></i>
         </div>
       </div>
     </div>
