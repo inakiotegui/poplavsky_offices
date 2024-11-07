@@ -9,6 +9,7 @@ import InfoAboutUs from "../../components/AboutUs/InfoAboutUs";
 import BloqueFinalAboutUs from "../../components/BloqueFinalAboutUs/InfoFinalAboutUs";
 import BannerAboutUs from "../../components/AboutUs/BannerAboutUs/BannerAboutUs";
 import OurTeam from "../../components/AboutUs/OurTeam/OurTeam";
+import Map from "../../components/Map/Map";
 
 export default function AboutUs() {
   const bannerRef = useRef(null);
@@ -49,6 +50,9 @@ export default function AboutUs() {
       </section>
       <section ref={teamRef}>
         <OurTeam />
+      </section>
+      <section className="col-12">
+        <Map />
       </section>
       <section className="col-12 bg-blue-dark">
         <FooterContacto />
