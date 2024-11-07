@@ -62,8 +62,8 @@ export default function FooterEnlaces() {
 
       <div className="flex flex-row justify-content-around border-round w-full p-0 bg-black-alpha-60">
         <div className="flex flex-column md:flex-row justify-content-center align-content-start md:align-items-center gap-2 md:gap-3 p-4">
-          <p className="text-left text-sm m-0">©2024 Poplavsky. All rights reserved.</p>
-          <p className="text-left text-sm m-0">Terms and Conditions</p>
+          <p className="text-left text-sm m-0">©2024 Poplavsky International Offices. All rights reserved.</p>
+          {/* <p className="text-left text-sm m-0">Terms and Conditions</p> */}
         </div>
         <div className="flex flex-row justify-content-center align-items-center gap-2 md:gap-3 p-4">
           <i className="cursor-pointer pi pi-instagram pr-1" onClick={() => navigateTo('https://www.instagram.com/popladubai/')} style={{ fontSize: "1rem" }}></i>
