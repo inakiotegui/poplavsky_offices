@@ -60,7 +60,7 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="ContactUs grid grid-nogutter nested-grid justify-content-center align-content-center gap-1"
+    <div className="ContactUs grid grid-nogutter nested-grid justify-content-center align-content-center gap-1 my-4"
       style={{ minHeight: "calc(100vh - 50px)" }}
     >
       <nav className="col-12 border-round mb-8">
