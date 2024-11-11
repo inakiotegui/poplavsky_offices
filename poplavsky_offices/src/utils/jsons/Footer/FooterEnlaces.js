@@ -2,7 +2,6 @@ const footerLinks = [
     {
         title: "Home",
         links: [
-            { text: "Hero", section: "heroRef", path: "/" },
             { text: "News", section: "prensaRef", path: "/" },
             { text: "FAQ´s", section: "faqsRef", path: "/" },
         ],
@@ -12,14 +11,13 @@ const footerLinks = [
         links: [
             { text: "Home", section: "bannerRef", path: "/about-us" },
             { text: "Who We Are", section: "infoRef", path: "/about-us" },
-            { text: "More Information", section: "finalRef", path: "/about-us" },
             { text: "Our Team", section: "teamRef", path: "/about-us" },
+            { text: "More Information", section: "finalRef", path: "/about-us" },
         ],
     },
     {
         title: "Services",
         links: [
-            { text: "Banner", section: "banner", path: "/services" },
             { text: "Services Overview", section: "serviceOverview", path: "/services" },
             { text: "Detail Description", section: "detailDescription", path: "/services" },
             { text: "List Of Services", section: "listOfServices", path: "/services" },

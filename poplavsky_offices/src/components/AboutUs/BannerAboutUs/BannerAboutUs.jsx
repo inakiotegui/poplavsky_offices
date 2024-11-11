@@ -9,8 +9,8 @@ export default function BannerAboutUs() {
       backgroundImage={fondo}
       backgroundLogo={logoopac}
       backgroundGradient="linear-gradient(90deg, rgba(31, 42, 51, 1) 0%, rgba(9, 9, 121, 0) 53%)"
-      title="Poplavsky International Offices DMCC: Your Gateway to Success in the UAE"
-      subtitle="Welcome to Estatein, where your real estate aspirations meet expert guidance. Explore our comprehensive range of services, each designed to cater to your unique needs and dreams."
+      title="Poplavsky International Offices DMCC: Your Partner for Business Success in the UAE"
+      subtitle="Expert guidance for Spanish-speaking businesses expanding into the UAE. From market entry to strategic representation, we provide the support and insights needed for sustainable growth."
     />
   );
 }
