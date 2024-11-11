@@ -29,7 +29,7 @@ export default function OurTeam() {
   const contentCard = (member) => {
     return (
       <div
-        className={`card-team md:w-12rem h-16rem border-round grid grid-nogutter justify-content-center align-content-center p-2 border-1 cursor-pointer ${(memberSelected !== null && memberSelected === member) ? 'card-team-selected' : ''}`}
+        className={`card-team md:w-12rem h-16rem border-round grid grid-nogutter justify-content-center align-content-start p-2 pt-3 border-1 cursor-pointer ${(memberSelected !== null && memberSelected === member) ? 'card-team-selected' : ''}`}
       >
         <div className='col-12 h-10rem relative'
           style={{

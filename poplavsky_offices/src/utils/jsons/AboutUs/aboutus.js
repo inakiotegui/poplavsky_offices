@@ -14,10 +14,8 @@ const aboutus = [
   {
     imagen: imagen2,
     titulo: "Mission and Strategy: Enabling Growth in the UAE Market",
-    texto1:
-      "At Poplavsky International Offices DMCC, we are the trusted partner for Spanish-speaking entrepreneurs and businesses seeking to expand into the United Arab Emirates (UAE). With a proven track record and expert guidance in all aspects of business establishment, we ensure that your entry into this thriving market is seamless, efficient, and positioned for long-term success.",
-    texto2:
-      "We offer comprehensive support across all critical areas, from selecting the most advantageous free zone for your company, to facilitating the opening of corporate bank accounts, conducting thorough market research, offering professional debt collection services, and providing strategic commercial representation.",
+    texto1: "Our mission is clear: to streamline your business expansion into the UAE, providing end-to-end services that address every aspect of the process. From the initial planning stages to ongoing operational support, we are committed to delivering exceptional results that ensure your business thrives in this competitive market.",
+    texto2: "With deep expertise in market expansion, our shareholders bring unparalleled knowledge in evaluating the potential of your product or service. We don’t just offer advice — we provide actionable insights to optimize your market entry strategy, enhance your appeal to local consumers, and navigate the regulatory landscape with confidence. Additionally, our commercial representation services go beyond basic support — we actively pursue buyers for your services within the UAE and across the broader region, driving real results for your business."
   },
   {
     imagen: imagen3,
