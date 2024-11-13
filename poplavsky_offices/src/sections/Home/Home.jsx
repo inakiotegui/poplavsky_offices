@@ -21,7 +21,10 @@ export default function Home() {
   const refs = { heroRef, whyUs, prensaRef, faqsRef };
 
   const scrollToSection = (ref) => {
-    ref?.current?.scrollIntoView({ behavior: "smooth" });
+    ref?.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
   };
 
   useEffect(() => {

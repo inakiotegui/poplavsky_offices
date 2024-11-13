@@ -21,7 +21,10 @@ export default function AboutUs() {
   const refs = { bannerRef, infoRef, finalRef, teamRef };
 
   const scrollToSection = (ref) => {
-    ref?.current?.scrollIntoView({ behavior: "smooth" });
+    ref?.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
   };
 
   useEffect(() => {

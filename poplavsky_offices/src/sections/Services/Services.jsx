@@ -20,7 +20,10 @@ export default function Services() {
   const refs = { banner, serviceOverview, detailDescription, listOfServices };
 
   const scrollToSection = (ref) => {
-    ref?.current?.scrollIntoView({ behavior: "smooth" });
+    ref?.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
   };
 
   useEffect(() => {
