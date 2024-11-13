@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import './OurTeam.css';
-import CustomDivider from '../../../utils/Divider/CustomDivider/CustomDivider';
-import { Button } from 'primereact/button';
+import React, { useState } from "react";
+import "./OurTeam.css";
+import CustomDivider from "../../../utils/Divider/CustomDivider/CustomDivider";
+import { Button } from "primereact/button";
 import { Dialog } from "primereact/dialog";
 
-import teamMembers from '../../../utils/jsons/AboutUs/ourTeam';
+import teamMembers from "../../../utils/jsons/AboutUs/ourTeam";
 
 export default function OurTeam() {
   const [memberSelected, setMember] = useState(null);
@@ -15,13 +15,14 @@ export default function OurTeam() {
   };
 
   const formatDescription = (description) => {
-    const words = description.split(' ');
-    const firstTwoWords = words.slice(0, 2).join(' ');
-    const remainingWords = words.slice(2).join(' ');
+    const words = description.split(" ");
+    const firstTwoWords = words.slice(0, 2).join(" ");
+    const remainingWords = words.slice(2).join(" ");
 
     return (
       <span>
-        <span className="text-pop-gold text-2xl">{firstTwoWords}</span> {remainingWords}
+        <span className="text-pop-gold text-2xl">{firstTwoWords}</span>{" "}
+        {remainingWords}
       </span>
     );
   };
@@ -29,17 +30,25 @@ export default function OurTeam() {
   const contentCard = (member) => {
     return (
       <div
-        className={`card-team md:w-16rem h-18rem md:h-20rem border-round grid grid-nogutter justify-content-center align-content-start p-2 pt-3 border-1 cursor-pointer ${(memberSelected !== null && memberSelected === member) ? 'card-team-selected' : ''}`}
+        className={`card-team md:w-16rem h-18rem md:h-20rem border-round grid grid-nogutter justify-content-center align-content-start p-2 pt-3 border-1 cursor-pointer ${
+          memberSelected !== null && memberSelected === member
+            ? "card-team-selected"
+            : ""
+        }`}
       >
-        <div className='col-12 h-12rem md:h-15rem relative'
+        <div
+          className="col-12 h-12rem md:h-15rem relative"
           style={{
             backgroundImage: `url(${member.photo})`,
-            backgroundSize: 'contain',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
+            backgroundSize: "contain",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
           }}
         >
-          <Button icon="pi pi-linkedin" className='px-4 py-1 absolute' size="small"
+          <Button
+            icon="pi pi-linkedin"
+            className="px-4 py-1 absolute"
+            size="small"
             style={{
               borderRadius: "50px",
               left: "50.5%",
@@ -49,16 +58,24 @@ export default function OurTeam() {
             onClick={() => handleNavigate(member.linkedin)}
           />
         </div>
-        <div className='col-12 flex justify-content-center align-items-center' style={{ height: 'fit-content' }}>
-          <p className='m-0 pt-3 text-white text-sm urbanist-semibold'>{member.fullName}</p>
+        <div
+          className="col-12 flex justify-content-center align-items-center"
+          style={{ height: "fit-content" }}
+        >
+          <p className="m-0 pt-3 text-white text-sm urbanist-semibold">
+            {member.fullName}
+          </p>
         </div>
-        <div className='col-12 flex justify-content-center align-items-center' style={{ height: 'fit-content' }}>
-          <p className='m-0 text-gray-400 text-xs text-center'>
+        <div
+          className="col-12 flex justify-content-center align-items-center"
+          style={{ height: "fit-content" }}
+        >
+          <p className="m-0 text-gray-400 text-xs text-center">
             {member.position}
           </p>
         </div>
       </div>
-    )
+    );
   };
 
   return (
@@ -68,26 +85,33 @@ export default function OurTeam() {
           <CustomDivider />
           <h2 className="text-white text-2xl md:text-4xl m m-2">Our Team</h2>
           <h4 className="m-0 text-xs md:text-lg w-full font-normal text-gray-500">
-            At Poplavsky International Offices, our team is composed of experts with extensive knowledge and diverse backgrounds, each dedicated to providing tailored solutions that drive successful international expansions in the UAE.
+            At Poplavsky International Offices, our team is composed of experts
+            with extensive knowledge and diverse backgrounds, each dedicated to
+            providing tailored solutions that drive successful international
+            expansions in the UAE.
           </h4>
         </div>
       </div>
 
-      <div className='col-12 grid grid-nogutter nested-grid justify-content-center align-content-center '>
-        <div className='col-12 mb-3 grid grid-nogutter nested-grid justify-content-center align-items-center md:gap-3 border-round'
-          style={{ height: 'fit-content' }}
+      <div className="col-12 grid grid-nogutter nested-grid justify-content-center align-content-center ">
+        <div
+          className="col-12 mb-3 grid grid-nogutter nested-grid justify-content-center align-items-center md:gap-3 border-round"
+          style={{ height: "fit-content" }}
         >
           {teamMembers.map((member, index) => (
-            <div className='custom-responsive-container col-6 md:col-fixed'>
+            <div className="custom-responsive-container col-6 md:col-fixed">
               <div
-                className='hidden md:block'
+                className="hidden md:block"
                 onClick={() => setMember(member)}
               >
                 {contentCard(member)}
               </div>
               <div
-                className='block md:hidden'
-                onClick={() => { setVisible(true); setMember(member) }}
+                className="block md:hidden"
+                onClick={() => {
+                  setVisible(true);
+                  setMember(member);
+                }}
               >
                 {contentCard(member)}
               </div>
@@ -95,15 +119,20 @@ export default function OurTeam() {
           ))}
         </div>
 
-        <div className='hidden md:flex col-10 bg-blue-dark border-round  justify-content-center align-items-center p-3' style={{ minHeight: '10rem' }}>
-          <p className='m-0 w-full text-center text-white'>
-            {memberSelected ? formatDescription(memberSelected.description) : 'Select a team member to view their profile'}
+        <div
+          className="hidden md:flex col-10 bg-blue-dark border-round  justify-content-center align-items-center p-3"
+          style={{ minHeight: "10rem" }}
+        >
+          <p className="m-0 w-full text-center text-white">
+            {memberSelected
+              ? formatDescription(memberSelected.description)
+              : "Select a team member to view their profile"}
           </p>
         </div>
       </div>
 
       <Dialog
-        header={memberSelected ? memberSelected.fullName : ''}
+        header={memberSelected ? memberSelected.fullName : ""}
         visible={visible}
         contentClassName="bg-blue-dark text-white"
         headerClassName="bg-blue-dark text-pop-gold"
@@ -111,12 +140,15 @@ export default function OurTeam() {
         dismissableMask={true}
         modal={true}
         closable={true}
-        onHide={() => { setVisible(false); setMember(null) }}
+        onHide={() => {
+          setVisible(false);
+          setMember(null);
+        }}
       >
         <p className="m-0 text-xs font-light">
-          {memberSelected ? formatDescription(memberSelected.description) : ''}
+          {memberSelected ? formatDescription(memberSelected.description) : ""}
         </p>
       </Dialog>
-    </div >
+    </div>
   );
 }
