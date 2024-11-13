@@ -4,7 +4,6 @@ import { Button } from "primereact/button";
 import { portadaData } from "../../../utils/jsons/Portada/PortadaData";
 import { useNavigate } from "react-router-dom";
 
-
 export default function Portada() {
   const navigate = useNavigate();
 
@@ -12,13 +11,12 @@ export default function Portada() {
     navigate(path, { state: { section } });
   };
 
-
   return (
     <div
       className="Portada grid grid-nogutter nested-grid border-round gap-3 p-3 relative fadein animation-duration-1000 animation-iteration-1 animation-ease-in-out"
       style={{ minHeight: "calc(100vh - 8rem)" }}
     >
-      <div
+      {/*      <div
         className="hidden bg-trl-blue absolute w-8rem h-8rem md:flex justify-content-center align-items-center shadow-4 hover:shadow-5 cursor-pointer"
         style={{
           borderRadius: "100%",
@@ -33,7 +31,7 @@ export default function Portada() {
         >
           <i className="pi pi-arrow-up-right text-2xl font-light text-js-yellow"></i>
         </div>
-      </div>
+      </div> */}
 
       <section className="border-round col-12 md:col-6 grid grid-nogutter nested-grid justify-content-center align-content-center align-items-center">
         <div
@@ -99,7 +97,7 @@ export default function Portada() {
             }}
           ></div>
 
-          <div className="col-12 h-auto w-full border-round flex flex-column md:flex-row justify-content-evenly align-items-center">
+          {/*       <div className="col-12 h-auto w-full border-round flex flex-column md:flex-row justify-content-evenly align-items-center">
             {portadaData.services.map((service, index) => (
               <p
                 key={index}
@@ -111,7 +109,7 @@ export default function Portada() {
                 {service.label}
               </p>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
     </div>
