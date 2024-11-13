@@ -19,8 +19,12 @@ export default function CardInfoAboutUs({
       >
         <div className="w-full md:w-5 md:text-left md:pl-5">
           <h1 className="text-2xl md:text-4xl m-0">{titulo}</h1>
-          <p className="text-sm md:text-base mb-1">{texto1}</p>
-          <p className="text-sm md:text-base">{texto2}</p>
+          <p className="text-sm md:text-base mb-1 text-sm md:text-base w-full font-normal text-gray-400">
+            {texto1}
+          </p>
+          <p className="text-sm md:text-base text-sm md:text-base w-full font-normal text-gray-400">
+            {texto2}
+          </p>
         </div>
 
         <div className="flex flex-column justify-content-center align-items-center w-full h-15rem md:h-25rem md:w-5 border-round image-container container-shadow-js-os">
