@@ -1,27 +1,26 @@
 {
-    "sectionTitle": "Why Choose Us?",
-    "intro": "Expanding into the UAE requires the right partner. At Poplavsky International Offices DMCC, we provide expert, tailored guidance to ensure a smooth and sustainable market entry. Our committed, results-focused approach makes every step clear, efficient, and successful.",
-    "reasons": [
-      {
-        "title": "Trust",
-        "icon": "pi pi-shield", 
-        "description": "At Poplavsky International Offices DMCC, trust is the core of our approach. We provide clear, dependable services, guiding clients confidently through complex UAE market dynamics."
-      },
-      {
-        "title": "Excellence",
-        "icon": "pi pi-star", 
-        "description": "We uphold top standards in every service, from company formation to market research, ensuring clients’ ventures are built for lasting success."
-      },
-      {
-        "title": "Client-Centric",
-        "icon": "pi pi-users", 
-        "description": "Our clients’ goals drive our strategies. We prioritize tailored solutions, carefully aligning with each client’s vision to empower growth in the UAE."
-      },
-      {
-        "title": "End-to-End Support",
-        "icon": "pi pi-check-circle", 
-        "description": "From initial planning to operational support, our team delivers practical insights and connects clients with key stakeholders for a smooth, efficient market entry."
-      }
-    ]
-  }
-  
+  "sectionTitle": "Why Choose Us?",
+  "intro": "Expanding into the UAE requires the right partner. At Poplavsky International Offices DMCC, we provide expert, tailored guidance to ensure a smooth and sustainable market entry. Our committed, results-focused approach makes every step clear, efficient, and successful.",
+  "reasons": [
+    {
+      "title": "Trust",
+      "icon": "fa-regular fa-handshake",
+      "description": "At Poplavsky International Offices DMCC, trust is the core of our approach. We provide clear, dependable services, guiding clients confidently through complex UAE market dynamics."
+    },
+    {
+      "title": "Excellence",
+      "icon": "pi pi-star",
+      "description": "We uphold top standards in every service, from company formation to market research, ensuring clients’ ventures are built for lasting success."
+    },
+    {
+      "title": "Client-Centric",
+      "icon": "pi pi-users",
+      "description": "Our clients’ goals drive our strategies. We prioritize tailored solutions, carefully aligning with each client’s vision to empower growth in the UAE."
+    },
+    {
+      "title": "End-to-End Support",
+      "icon": "pi pi-check-circle",
+      "description": "From initial planning to operational support, our team delivers practical insights and connects clients with key stakeholders for a smooth, efficient market entry."
+    }
+  ]
+}
