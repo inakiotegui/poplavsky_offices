@@ -29,9 +29,9 @@ export default function OurTeam() {
   const contentCard = (member) => {
     return (
       <div
-        className={`card-team md:w-12rem h-16rem border-round grid grid-nogutter justify-content-center align-content-start p-2 pt-3 border-1 cursor-pointer ${(memberSelected !== null && memberSelected === member) ? 'card-team-selected' : ''}`}
+        className={`card-team md:w-16rem h-18rem md:h-20rem border-round grid grid-nogutter justify-content-center align-content-start p-2 pt-3 border-1 cursor-pointer ${(memberSelected !== null && memberSelected === member) ? 'card-team-selected' : ''}`}
       >
-        <div className='col-12 h-10rem relative'
+        <div className='col-12 h-12rem md:h-15rem relative'
           style={{
             backgroundImage: `url(${member.photo})`,
             backgroundSize: 'contain',
@@ -74,7 +74,7 @@ export default function OurTeam() {
       </div>
 
       <div className='col-12 grid grid-nogutter nested-grid justify-content-center align-content-center '>
-        <div className='col-12 md:col-10 mb-3 grid grid-nogutter nested-grid justify-content-center align-items-center md:gap-3 border-round'
+        <div className='col-12 mb-3 grid grid-nogutter nested-grid justify-content-center align-items-center md:gap-3 border-round'
           style={{ height: 'fit-content' }}
         >
           {teamMembers.map((member, index) => (
