@@ -38,7 +38,7 @@ const footerLinks = [
     title: "Contact Us",
     links: [
       { text: "Contact Form", section: "contactFormRef", path: "/contact-us" },
-      { text: "Our Offices", section: "ourOfficesRef", path: "/contact-us" },
+      { text: "Our Offices", section: "mapRef", path: "/about-us" },
     ],
   },
 ];
