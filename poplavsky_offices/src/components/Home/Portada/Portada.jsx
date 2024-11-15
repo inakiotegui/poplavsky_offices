@@ -39,10 +39,10 @@ export default function Portada() {
           style={{ minHeight: "25rem" }}
         >
           <div className="w-full">
-            <h1 className="text-white m-0 text-3xl md:text-6xl w-full text-justify">
+            <h1 className="text-white m-0 text-3xl md:text-6xl w-full">
               {portadaData.title}
             </h1>
-            <h4 className="m-0 text-xs md:text-lg w-full font-normal text-gray-500 text-justify">
+            <h4 className="m-0 text-xs md:text-lg w-full font-normal text-gray-500">
               {portadaData.subtitle}
             </h4>
           </div>
