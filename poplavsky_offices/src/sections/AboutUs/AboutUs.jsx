@@ -16,10 +16,9 @@ export default function AboutUs() {
   const infoRef = useRef(null);
   const finalRef = useRef(null);
   const teamRef = useRef(null);
-  const mapRef = useRef(null);
   const location = useLocation();
 
-  const refs = { bannerRef, infoRef, finalRef, teamRef, mapRef };
+  const refs = { bannerRef, infoRef, finalRef, teamRef };
 
   const scrollToSection = (ref) => {
     ref?.current?.scrollIntoView({
@@ -54,7 +53,7 @@ export default function AboutUs() {
       <section ref={teamRef}>
         <OurTeam />
       </section>
-      <section ref={mapRef} className="col-12">
+      <section className="col-12">
         <Map />
       </section>
       <section className="col-12 bg-blue-dark">

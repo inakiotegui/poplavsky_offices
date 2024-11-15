@@ -1,4 +1,4 @@
-import arsenia from "../../../assets/img/equipo/arsenia.webp";
+import arsenia from "../../../assets/img/equipo/arsenia.png";
 import manuel from "../../../assets/img/equipo/manuel.webp";
 import patricio from "../../../assets/img/equipo/patricio.webp";
 import vanina from "../../../assets/img/equipo/vanina.webp";

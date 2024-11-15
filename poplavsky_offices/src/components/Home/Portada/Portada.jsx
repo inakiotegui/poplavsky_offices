@@ -83,7 +83,7 @@ export default function Portada() {
 
       <section className="container-logo-portada border-round col grid grid-nogutter nested-grid justify-content-center align-content-center">
         <div
-          className="col-12 md:col-10 border-round p-3 grid grid-nogutter nested-grid justify-content-center align-content-start gap-3"
+          className="col-12 md:col-10 border-round p-3 grid grid-nogutter nested-grid justify-content-center align-content-center gap-3"
           style={{ minHeight: "25rem" }}
         >
           <div

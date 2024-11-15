@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import emailjs from "emailjs-com";
 import { InputText } from "primereact/inputtext";
 import { InputTextarea } from "primereact/inputtextarea";
@@ -7,6 +7,10 @@ import "./ContactUs.css";
 import NavBar from "../../components/NavBar/NavBar";
 import CustomDivider from "../../utils/Divider/CustomDivider/CustomDivider";
 import { Toast } from "primereact/toast";
+import Map from "../../components/Map/Map";
+import { useLocation } from "react-router-dom";
+
+import FooterEnlaces from "../../components/FooterEnlaces/FooterEnlaces";
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
@@ -16,6 +20,9 @@ export default function ContactUs() {
   });
   const [isEmailValid, setIsEmailValid] = useState(true);
   const toast = useRef(null);
+  const mapRef = useRef(null);
+  const refs = { mapRef };
+  const location = useLocation();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -28,6 +35,22 @@ export default function ContactUs() {
       [name]: value,
     });
   };
+
+  const scrollToSection = (ref) => {
+    ref?.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "center",
+    });
+  };
+
+  useEffect(() => {
+    if (location.state?.section) {
+      const sectionRef = refs[location.state.section];
+      if (sectionRef) {
+        scrollToSection(sectionRef);
+      }
+    }
+  }, [location]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -70,15 +93,15 @@ export default function ContactUs() {
 
   return (
     <div
-      className="ContactUs grid grid-nogutter nested-grid justify-content-center align-content-center gap-1 my-4"
+      className="ContactUs grid grid-nogutter nested-grid justify-content-center align-content-center gap-1 mt-4"
       style={{ minHeight: "calc(100vh - 50px)" }}
     >
       <nav className="col-12 border-round mb-8">
         <NavBar />
       </nav>
 
-      <div className="col-10 grid grid-nogutter nested-grid gap-3">
-        <section className="col-12 md:col-5 flex align-items-center">
+      <div className="col-10 grid grid-nogutter nested-grid gap-3 mb-8">
+        <section className="col-12 md:col-6 flex flex-column justify-content-between align-items-center">
           <div className="w-full px-4 md:px-6 grid grid-nogutter nested-grid justify-content-start align-items-center border-round">
             <p className="w-full flex gap-3 align-items-center text-white">
               <i className="text-js-yellow pi pi-map-marker"></i>Opus Tower,
@@ -98,6 +121,10 @@ export default function ContactUs() {
               <i className="text-js-yellow pi pi-instagram"></i>Follow us
               @poplavsky
             </p>
+          </div>
+
+          <div ref={mapRef} className="w-full">
+            <Map contacto={true} />
           </div>
         </section>
 
@@ -171,6 +198,11 @@ export default function ContactUs() {
           </form>
         </section>
       </div>
+
+      <section className="col-12 bg-blue-dark">
+        <FooterEnlaces />
+      </section>
+
       <Toast ref={toast} />
     </div>
   );
