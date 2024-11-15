@@ -27,18 +27,18 @@ export default function InfoFinalAboutUs() {
               your business.
             </p>
             <p className="solution p-3 m-0">
-              Seamless assistance with opening corporate bank accounts
+              Seamless assistance with opening corporate bank accounts.
             </p>
             <p className="solution p-3 m-0">
               In-depth market research to identify and capitalize on business
-              opportunities
+              opportunities.
             </p>
             <p className="solution p-3 m-0">
-              Professional debt collection services for unpaid invoices
+              Professional debt collection services for unpaid invoices.
             </p>
             <p className="solution p-3 m-0">
               Strategic commercial representation, connecting you with key
-              buyers in the UAE
+              buyers in the UAE.
             </p>
           </div>
         </div>

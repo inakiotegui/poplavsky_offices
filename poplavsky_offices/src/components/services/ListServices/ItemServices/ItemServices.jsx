@@ -92,7 +92,7 @@ export default function ItemServices({
         >
           <h1 className="text-3xl md:text-4xl m-0 mb-2">{titulo}</h1>
           <p className="text-sm md:text-base mb-4">{descripcion}</p>
-          <ul className="list-disc pl-5 space-y-2">
+          <ul className="list-disc p-0 space-y-2 pl-3">
             {points.map((point, idx) => (
               <li key={idx} className="text-sm md:text-base p-1">
                 {point}

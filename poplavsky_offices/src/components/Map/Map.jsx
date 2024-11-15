@@ -13,7 +13,7 @@ export default function Map() {
         </div>
         <div className="flex justify-content-center w-full md:w-10 h-25rem map-container mt-2">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.430309586653!2d55.26428602444142!3d25.18870703204632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6926edcc98b1%3A0x43a67efe17c6af45!2sOpus%20tower!5e0!3m2!1ses!2sar!4v1730949822261!5m2!1ses!2sar"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3610.428212239713!2d55.2670773!3d25.188777800000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f69be86f26347%3A0xc3405c66facfcc1d!2sPoplavsky%20International%20Offices%20Dubai!5e0!3m2!1ses-419!2sar!4v1731673381482!5m2!1ses-419!2sar"
             width="100%"
             height="100%"
             style={{ border: 0 }}
