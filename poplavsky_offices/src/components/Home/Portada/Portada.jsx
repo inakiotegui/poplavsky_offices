@@ -13,7 +13,7 @@ export default function Portada() {
 
   return (
     <div
-      className="Portada grid grid-nogutter nested-grid border-round gap-3 p-3 relative fadein animation-duration-1000 animation-iteration-1 animation-ease-in-out"
+      className="Portada container-logo-total grid grid-nogutter nested-grid border-round gap-3 p-3 relative fadein animation-duration-1000 animation-iteration-1 animation-ease-in-out"
       style={{ minHeight: "calc(100vh - 8rem)" }}
     >
       {/*      <div
