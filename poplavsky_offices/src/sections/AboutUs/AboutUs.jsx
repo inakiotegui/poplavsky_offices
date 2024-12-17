@@ -18,9 +18,12 @@ export default function AboutUs() {
   const bannerRef = useRef(null);
   const finalRef = useRef(null);
   const teamRef = useRef(null);
+  const ourVision = useRef(null);
+  const ourMission = useRef(null);
+  const whyUs = useRef(null);
   const location = useLocation();
 
-  const refs = { bannerRef, finalRef, teamRef };
+  const refs = { bannerRef, finalRef, teamRef, ourVision, ourMission, whyUs };
 
   const scrollToSection = (ref) => {
     ref?.current?.scrollIntoView({
@@ -48,8 +51,8 @@ export default function AboutUs() {
       </section>
 
       <section className="col-12 my-6">
-        <div className="grid grid-nogutter gap-3 nested-grid justify-content-start align-items-center  border-round pb-2">
-          <div className="col-12 md:col-6 px-4 md:px-6">
+        <div ref={ourVision} className="grid grid-nogutter gap-3 nested-grid justify-content-start align-items-center  border-round pb-2">
+          <div className="col-12 md:col-6 px-5 md:px-6">
             <CustomDivider />
             <h2 className="text-white text-2xl md:text-4xl m m-2">
               Our Vision
@@ -61,7 +64,7 @@ export default function AboutUs() {
             </h4>
           </div>
 
-          <div className="col-12 md:col px-4 md:px-6">
+          <div ref={ourMission} className="col-12 md:col px-5 md:px-6">
             <CustomDivider />
             <h2 className="text-white text-2xl md:text-4xl m m-2">
               Our Mission
@@ -75,7 +78,7 @@ export default function AboutUs() {
         </div>
       </section>
 
-      <section className="col-12">
+      <section ref={whyUs} className="col-12">
         <WhyChooseUs />
       </section>
 
