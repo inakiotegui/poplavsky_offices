@@ -11,14 +11,19 @@ import FAQs from "../../components/Home/FAQs/FAQs";
 import FooterContacto from "../../components/FooterContacto/FooterContacto";
 import FooterEnlaces from "../../components/FooterEnlaces/FooterEnlaces";
 
+import InfoAboutUs from "../../components/AboutUs/InfoAboutUs";
+import BloqueFinalAboutUs from "../../components/BloqueFinalAboutUs/InfoFinalAboutUs";
+
 export default function Home() {
   const heroRef = useRef(null);
   const whyUs = useRef(null);
   const prensaRef = useRef(null);
+  const infoRef = useRef(null);
+  const finalRef = useRef(null);
   const faqsRef = useRef(null);
   const location = useLocation();
 
-  const refs = { heroRef, whyUs, prensaRef, faqsRef };
+  const refs = { heroRef, whyUs, prensaRef, faqsRef, infoRef, finalRef };
 
   const scrollToSection = (ref) => {
     ref?.current?.scrollIntoView({
@@ -47,6 +52,14 @@ export default function Home() {
 
       <section className="col-12 mb-3 md:mb-8">
         <SummaryServices />
+      </section>
+
+      <section ref={infoRef} className="col-12">
+        <InfoAboutUs />
+      </section>
+
+      <section ref={finalRef}>
+        <BloqueFinalAboutUs />
       </section>
 
       <section ref={whyUs} className="col-12 mb-3 md:mb-8">
