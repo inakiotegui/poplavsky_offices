@@ -11,8 +11,18 @@
   background-repeat: no-repeat;
 }
 
+.container-texto-portada {
+  color: #999999 !important;
+}
+
 /* 768px */
 @media screen and (min-width: 768px) {
+  .container-texto-portada {
+    background-color: var(--blue-pop-bg-dark-translucent);
+    border: 1px solid #999999;
+    color: rgba(245, 245, 245, 0.65) !important;
+  }
+
   .container-logo-portada {
     background-image: none;
   }
