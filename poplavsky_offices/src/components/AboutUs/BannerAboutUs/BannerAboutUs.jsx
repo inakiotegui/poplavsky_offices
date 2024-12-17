@@ -10,7 +10,7 @@ export default function BannerAboutUs() {
       backgroundLogo={logoopac}
       backgroundGradient="linear-gradient(90deg, rgba(31, 42, 51, 1) 0%, rgba(9, 9, 121, 0) 53%)"
       title="Poplavsky International Offices DMCC: Your Partner for Business Success in the UAE"
-      subtitle="Expert guidance for Spanish-speaking businesses expanding into the UAE. From market entry to strategic representation, we provide the support and insights needed for sustainable growth."
+      subtitle="Expert guidance for Entrepreneurs businesses expanding into the UAE. From market entry to strategic representation, we provide the support and insights needed for sustainable growth."
     />
   );
 }

@@ -7,7 +7,7 @@ const aboutus = [
     imagen: imagen1,
     titulo: "Our Commitment to Business Success in the UAE",
     texto1:
-      "At Poplavsky International Offices DMCC, we are the trusted partner for Spanish-speaking entrepreneurs and businesses seeking to expand into the United Arab Emirates (UAE). With a proven track record and expert guidance in all aspects of business establishment, we ensure that your entry into this thriving market is seamless, efficient, and positioned for long-term success.",
+      "At Poplavsky International Offices DMCC, we are the trusted partner for Entrepreneurs entrepreneurs and businesses seeking to expand into the United Arab Emirates (UAE). With a proven track record and expert guidance in all aspects of business establishment, we ensure that your entry into this thriving market is seamless, efficient, and positioned for long-term success.",
     texto2:
       "We offer comprehensive support across all critical areas, from selecting the most advantageous free zone for your company, to facilitating the opening of corporate bank accounts, conducting thorough market research, offering professional debt collection services, and providing strategic commercial representation.",
   },
