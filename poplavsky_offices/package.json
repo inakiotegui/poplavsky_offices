@@ -18,7 +18,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage":"https://poplavskydubai.com/",
+  "homepage": "https://poplavskydubai.com/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

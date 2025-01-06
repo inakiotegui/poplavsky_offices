@@ -1,4 +1,4 @@
-import imagen1 from "../../../assets/img/dubai2.webp";
+import imagen1 from "../../../assets/img/1.png";
 import imagen2 from "../../../assets/img/dubai6.webp";
 import imagen3 from "../../../assets/img/dubai7.webp";
 
