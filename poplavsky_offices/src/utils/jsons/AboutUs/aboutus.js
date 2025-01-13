@@ -1,6 +1,6 @@
-import imagen1 from "../../../assets/img/1.png";
-import imagen2 from "../../../assets/img/img2.jpg";
-import imagen3 from "../../../assets/img/img3.jpg";
+import imagen1 from "../../../assets/img/img1.webp";
+import imagen2 from "../../../assets/img/img2.webp";
+import imagen3 from "../../../assets/img/img3.webp";
 
 const aboutus = [
   {

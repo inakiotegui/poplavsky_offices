@@ -45,7 +45,7 @@ export default function Portada() {
             </div>
 
             <div className="col-12 grid grid-nogutter nested-grid gap-3 h-auto">
-              <p className="m-0 text-xs w-full font-normal">
+              <p className="m-0 text-s w-full font-normal">
                 At Poplavsky International Offices DMCC, we help entrepreneurs
                 bring their business vision to the United Arab Emirates. We turn
                 your vision into reality with comprehensive support, from
